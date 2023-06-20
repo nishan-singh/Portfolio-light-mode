@@ -1,0 +1,77 @@
+@import "../../../variables.scss";
+
+.skills-wrapper {
+  background-color: $light-color-2;
+  display: flex;
+  gap: $m-48;
+  padding: $spacing-inline $spacing-block;
+}
+
+.skills-text-wrapper {
+  flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: $m-16;
+  h2 {
+    font-size: $heading-font-size;
+  }
+}
+
+.skills-list {
+  flex-basis: 55%;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: $m-32;
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $m-8;
+    margin: 0 $m-32 $m-32 0;
+  }
+}
+
+svg {
+  width: 48px;
+  height: 48px;
+}
+
+@media (max-width: 1024px) {
+  .skills-wrapper {
+    gap: $m-32;
+  }
+  .skills-text-wrapper {
+    flex-basis: 50%;
+  }
+  .skills-list {
+    flex-basis: 50%;
+  }
+  ul {
+    grid-template-columns: repeat(3, 1fr);
+    gap: $m-24;
+    li {
+      margin: 0 $m-16 $m-16 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-wrapper {
+    padding-inline: $spacing-inline-mobile;
+    flex-direction: column;
+    gap: $m-48;
+  }
+  .skills-text-wrapper,
+  .skills-list {
+    width: 100%;
+  }
+  ul {
+    grid-template-columns: repeat(3, 1fr);
+    li {
+      margin: 0 $m-16 $m-16 0;
+    }
+  }
+}

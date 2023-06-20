@@ -12,6 +12,7 @@
 body {
   font-family: "Karla", sans-serif;
   background-color: $white-color;
+  color: $dark-color;
 }
 
 li {
@@ -42,11 +43,12 @@ h3 {
 
 .lets-talk {
   display: inline-block;
+  width: fit-content;
   background-color: $dark-color;
   color: $white-color;
   border-radius: $btn-border-radius;
   padding: $btn-padding;
-  margin-block: 0 $m-32;
+  margin-block-start: $m-24;
   font-family: "karla", sans-serif;
   border: 1px solid transparent;
   transition: all 0.3s ease-in-out;
