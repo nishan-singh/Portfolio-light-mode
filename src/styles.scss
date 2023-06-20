@@ -26,9 +26,33 @@ img {
   max-width: 100%;
 }
 
+button {
+  border: transparent;
+  outline: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 h1,
 h2,
 h3 {
   font-family: "Inter", sans-serif;
   margin-block: 0;
+}
+
+.lets-talk {
+  display: inline-block;
+  background-color: $dark-color;
+  color: $white-color;
+  border-radius: $btn-border-radius;
+  padding: $btn-padding;
+  margin-block: 0 $m-32;
+  font-family: "karla", sans-serif;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    border-color: $dark-color;
+    background-color: $white-color;
+    color: $dark-color;
+  }
 }

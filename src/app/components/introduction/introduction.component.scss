@@ -5,12 +5,13 @@
   display: flex;
   align-items: center;
   padding-inline: $spacing-inline;
-  padding-block: 7.5em;
+  height: calc(100vh - $header-height);
+  // height: calc(100dvh - $header-height);
   color: $dark-color;
   h1,
   h2,
   h3 {
-    font-size: clamp(2.125rem, 5vw, 5rem);
+    font-size: clamp(2rem, 5vw, 5rem);
     font-weight: 800;
     line-height: 1.2;
     em {
@@ -33,23 +34,6 @@
   justify-content: center;
   img {
     max-width: 80%;
-  }
-}
-
-.lets-talk {
-  display: inline-block;
-  background-color: $dark-color;
-  color: $white-color;
-  border-radius: $btn-border-radius;
-  padding: $btn-padding;
-  margin-block: 0 $m-32;
-  font-family: "karla", sans-serif;
-  border: 1px solid transparent;
-  transition: all 0.3s ease-in-out;
-  &:hover {
-    border-color: $dark-color;
-    background-color: $white-color;
-    color: $dark-color;
   }
 }
 
@@ -78,6 +62,7 @@ aside {
     flex-direction: column-reverse;
     padding-inline: $spacing-inline-mobile;
     padding-block: $spacing-block-mobile;
+    height: auto;
   }
   .intro-text {
     flex-basis: 100%;

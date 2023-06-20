@@ -1,0 +1,36 @@
+@import "../../../variables.scss";
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  padding-inline: $spacing-inline;
+  padding-block: $spacing-block;
+  color: $dark-color;
+}
+
+.personal-infos {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: $m-16;
+  h2 {
+    font-size: $heading-font-size;
+  }
+  p {
+    font-weight: 500;
+  }
+  h3 {
+    font-size: $subheading-font-size;
+    font-weight: 500;
+  }
+  a {
+    max-width: fit-content;
+  }
+}
+
+.infos {
+  flex-basis: 60%;
+  p {
+    line-height: 1.5;
+  }
+}
