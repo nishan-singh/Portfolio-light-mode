@@ -1,0 +1,92 @@
+@import "../../../variables.scss";
+
+.intro {
+  background-color: $light-color;
+  display: flex;
+  align-items: center;
+  padding-inline: $spacing-inline;
+  padding-block: 7.5em;
+  color: $dark-color;
+  h1,
+  h2,
+  h3 {
+    font-size: clamp(2.125rem, 5vw, 5rem);
+    font-weight: 800;
+    line-height: 1.2;
+    em {
+      color: $blue-color;
+      font-style: normal;
+    }
+  }
+  p {
+    margin-block: $m-32;
+  }
+}
+
+.intro-text {
+  flex-basis: 60%;
+}
+
+.intro-image {
+  flex-basis: 40%;
+  display: flex;
+  justify-content: center;
+  img {
+    max-width: 80%;
+  }
+}
+
+.lets-talk {
+  display: inline-block;
+  background-color: $dark-color;
+  color: $white-color;
+  border-radius: $btn-border-radius;
+  padding: $btn-padding;
+  margin-block: 0 $m-32;
+  font-family: "karla", sans-serif;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    border-color: $dark-color;
+    background-color: $white-color;
+    color: $dark-color;
+  }
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 4px;
+    background-color: $yellow-color;
+  }
+  a {
+    margin: $m-8 $m-16;
+    font-weight: 600;
+    color: $dark-color;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column-reverse;
+    padding-inline: $spacing-inline-mobile;
+    padding-block: $spacing-block-mobile;
+  }
+  .intro-text {
+    flex-basis: 100%;
+    margin-block: $spacing-block-mobile;
+  }
+  .intro-image {
+    flex-basis: 100%;
+    img {
+      max-width: 75%;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@import "../../../variables";
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: $header-height;
+  background-color: #fff;
+  padding-inline: $spacing-inline;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 600;
+  color: $dark-color;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  strong {
+    color: $blue-color;
+  }
+  &:hover,
+  &:focus {
+    color: $yellow-color;
+  }
+}
+
+ul {
+  display: flex;
+  align-items: center;
+}
+
+.each-nav-link {
+  color: $dark-color;
+  margin-inline-end: $m-32;
+  font-weight: 600;
+}
