@@ -6,8 +6,7 @@
   align-items: center;
   padding-inline: $spacing-inline;
   height: calc(100vh - $header-height);
-  // height: calc(100dvh - $header-height);
-  color: $dark-color;
+  height: calc(100dvh - $header-height);
   h1,
   h2,
   h3 {
@@ -28,7 +27,7 @@
   flex-basis: 60%;
 }
 
-.lets-talk {
+.default-btn {
   margin-block: $m-32;
 }
 
@@ -61,6 +60,14 @@ aside {
   }
 }
 
+@media (min-width: 1200px) {
+  .intro-image {
+    img {
+      max-width: 65%;
+    }
+  }
+}
+
 @media (max-width: 872px) {
   .intro {
     h1,
@@ -77,7 +84,6 @@ aside {
   }
   .intro-text {
     width: 100%;
-    margin-block: $spacing-block-mobile;
   }
   .intro-image {
     width: 60%;
@@ -85,8 +91,9 @@ aside {
 }
 
 @media (max-width: 768px) {
-  .intro-text {
-    margin-block: $spacing-block-mobile;
+  .intro {
+    padding-inline: $spacing-inline-mobile;
+    padding-block: $spacing-block-mobile;
   }
   .intro-image {
     width: 80%;
@@ -94,9 +101,6 @@ aside {
 }
 
 @media (max-width: 576px) {
-  .intro-text {
-    margin-block: $spacing-block-mobile;
-  }
   .intro-image {
     width: 100%;
   }

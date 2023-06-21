@@ -1,0 +1,104 @@
+@import "../../../variables.scss";
+
+.projects-wrapper {
+  padding: $spacing-block $spacing-inline;
+}
+
+.project-info {
+  margin-block-end: $m-32;
+  h2,
+  p {
+    margin-block-end: $m-16;
+  }
+  h2 {
+    font-size: $heading-font-size;
+  }
+}
+
+figure {
+  margin-block-end: $m-48;
+  display: flex;
+  gap: 72px;
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  img {
+    width: 500px;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: $m-24;
+    h3 {
+      font-size: $subheading-font-size;
+      margin-block-end: $m-16;
+    }
+    p {
+      line-height: 1.8;
+    }
+  }
+}
+
+.github-link {
+  margin-inline-end: $m-32;
+  background-color: $white-color;
+  border: 1px solid $dark-color;
+  color: $dark-color;
+  &:hover {
+    background-color: $dark-color;
+    color: $white-color;
+  }
+}
+
+@media (min-width: 1200px) {
+  figure {
+    figcaption {
+      width: 50ch;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  figure {
+    gap: $m-48;
+    img {
+      width: 400px;
+    }
+  }
+}
+
+@media (max-width: 872px) {
+  figure {
+    flex-direction: column;
+    gap: $m-32;
+    &:nth-child(even) {
+      flex-direction: column;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .github-link {
+    margin-inline-end: $m-16;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-wrapper {
+    padding: $spacing-block-mobile $spacing-inline-mobile;
+  }
+  figure {
+    margin-block-end: 72px;
+    figcaption {
+      width: 100%;
+      gap: $m-8;
+    }
+  }
+  .github-link,
+  .default-btn {
+    margin-block-start: $m-16;
+  }
+}
