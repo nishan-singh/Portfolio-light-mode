@@ -1,0 +1,92 @@
+@import "../../../variables.scss";
+
+.contact-wrapper {
+  background-color: #e9f9ff;
+  padding: $spacing-block $spacing-inline;
+  display: flex;
+  gap: $m-48 * 2;
+}
+
+.info-about-me,
+.contact-form {
+  flex: 1;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: $m-32;
+}
+
+input,
+textarea {
+  padding: $input-padding;
+  font-size: 17px;
+  border: 1px solid #eee;
+  &:focus {
+    border-color: #ccc;
+  }
+}
+
+textarea {
+  resize: none;
+  max-height: 150px;
+}
+
+.default-btn {
+  margin-block-start: 0;
+  font-size: 17px;
+}
+
+.info-about-me {
+  h2 {
+    font-size: $heading-font-size;
+  }
+  h2,
+  p {
+    margin-block-end: $m-16;
+  }
+}
+
+.contact-infos {
+  display: flex;
+  flex-direction: column;
+  gap: $m-16;
+  margin-block-start: $m-48;
+  a {
+    width: fit-content;
+    color: $dark-color;
+    border-bottom: 1px solid $dark-color;
+    font-weight: bold;
+    transition: border-color 0.3s ease-in-out;
+    &:hover {
+      border-color: transparent;
+    }
+  }
+}
+
+@media (max-width: 872px) {
+  .contact-wrapper {
+    flex-direction: column;
+    gap: $m-8;
+  }
+  .info-about-me,
+  .contact-form {
+    margin-inline-end: 0;
+  }
+  .contact-form {
+    margin-block-start: $m-48;
+  }
+  .contact-infos {
+    margin-block-start: $m-32;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-wrapper {
+    padding: $spacing-block-mobile $spacing-inline-mobile;
+  }
+  .contact-infos {
+    margin-block-start: $m-16;
+  }
+}

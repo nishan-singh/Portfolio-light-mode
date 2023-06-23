@@ -9,10 +9,24 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Karla", sans-serif;
   background-color: $white-color;
   color: $dark-color;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 288px);
+}
+
+app-footer {
+  margin-top: auto;
 }
 
 li {
@@ -32,6 +46,12 @@ button {
   outline: transparent;
   background-color: transparent;
   cursor: pointer;
+}
+
+input,
+textarea {
+  outline: transparent;
+  font-family: "Karla", sans-serif;
 }
 
 h1,

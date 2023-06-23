@@ -1,0 +1,28 @@
+@import "../../../variables.scss";
+
+.imprint-wrapper {
+  background-color: #fff5f6;
+  padding: $spacing-block $spacing-inline;
+  display: flex;
+  flex-direction: column;
+  gap: $m-12;
+  min-height: calc(100vh - 288px);
+}
+
+h1 {
+  font-size: $heading-font-size;
+}
+
+h2 {
+  font-size: $subheading-font-size;
+}
+
+p {
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .imprint-wrapper {
+    padding: $spacing-block-mobile $spacing-inline-mobile;
+  }
+}

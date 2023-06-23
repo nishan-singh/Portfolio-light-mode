@@ -15,10 +15,16 @@
   }
 }
 
-figure {
-  margin-block-end: $m-48;
+.projects {
   display: flex;
-  gap: 72px;
+  flex-direction: column;
+  gap: $m-48;
+}
+
+figure {
+  display: flex;
+  justify-content: space-between;
+  gap: $m-48;
   &:nth-child(even) {
     flex-direction: row-reverse;
   }
@@ -42,7 +48,13 @@ figure {
   }
 }
 
+.tech-info {
+  font-weight: bold;
+  margin-block-start: $m-16;
+}
+
 .github-link {
+  margin-block-start: $m-16;
   margin-inline-end: $m-32;
   background-color: $white-color;
   border: 1px solid $dark-color;
@@ -53,8 +65,9 @@ figure {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   figure {
+    justify-content: initial;
     figcaption {
       width: 50ch;
     }
@@ -63,7 +76,6 @@ figure {
 
 @media (max-width: 1024px) {
   figure {
-    gap: $m-48;
     img {
       width: 400px;
     }
@@ -71,9 +83,23 @@ figure {
 }
 
 @media (max-width: 872px) {
+  .projects {
+    gap: $m-32;
+  }
   figure {
+    background: linear-gradient($yellow-color, $yellow-color) top left,
+      linear-gradient($yellow-color, $yellow-color) top left,
+      linear-gradient($yellow-color, $yellow-color) top right,
+      linear-gradient($yellow-color, $yellow-color) top right,
+      linear-gradient($yellow-color, $yellow-color) bottom left,
+      linear-gradient($yellow-color, $yellow-color) bottom left,
+      linear-gradient($yellow-color, $yellow-color) bottom right,
+      linear-gradient($yellow-color, $yellow-color) bottom right;
+    background-size: 2px 20px, 20px 2px;
+    background-repeat: no-repeat;
     flex-direction: column;
     gap: $m-32;
+    padding: $m-24;
     &:nth-child(even) {
       flex-direction: column;
     }
@@ -91,7 +117,6 @@ figure {
     padding: $spacing-block-mobile $spacing-inline-mobile;
   }
   figure {
-    margin-block-end: 72px;
     figcaption {
       width: 100%;
       gap: $m-8;

@@ -1,0 +1,58 @@
+@import "../../../variables.scss";
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $spacing-block $spacing-inline;
+  color: $dark-color;
+  min-height: 224px;
+  div {
+    display: flex;
+    flex-direction: column;
+    .homepage-link {
+      font-weight: bold;
+      font-size: $subheading-font-size;
+      margin-block-end: $m-8;
+    }
+    a {
+      color: $dark-color;
+    }
+  }
+  .imprint {
+    font-size: 1.25rem;
+    &:hover {
+      color: $blue-color;
+    }
+  }
+}
+
+.external-links {
+  display: flex;
+  gap: $m-32;
+  a {
+    display: block;
+  }
+}
+
+svg {
+  width: 32px;
+  height: 32px;
+  fill: $dark-color;
+  &:hover {
+    fill: $blue-color;
+  }
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    padding: $spacing-block-mobile $spacing-inline-mobile;
+    gap: $m-24;
+    text-align: center;
+  }
+}

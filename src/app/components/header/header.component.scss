@@ -28,9 +28,12 @@ header {
   }
 }
 
-ul {
+.nav-links-list {
   display: flex;
   align-items: center;
+  li {
+    margin-inline-start: $m-32;
+  }
 }
 
 .toggle-btn {
@@ -41,15 +44,45 @@ ul {
   }
 }
 
+.toggle-btn {
+  rect {
+    transition: y 175ms ease-in 175ms, rotate 175ms ease-in, opacity 0ms 175ms;
+    transform-origin: center;
+  }
+  &[aria-expanded="true"] rect {
+    transition: y 175ms ease-in, rotate 175ms ease-in 175ms, opacity 0ms 175ms;
+  }
+  &[aria-expanded="true"] rect:nth-child(odd) {
+    y: 15;
+  }
+  &[aria-expanded="true"] rect:nth-child(1) {
+    rotate: 45deg;
+  }
+  &[aria-expanded="true"] rect:nth-child(3) {
+    rotate: -45deg;
+  }
+  &[aria-expanded="true"] rect:nth-child(even) {
+    opacity: 0;
+  }
+}
+
 .each-nav-link {
   color: $dark-color;
-  margin-inline-start: $m-32;
   font-weight: 600;
   font-size: 1.2rem;
 }
 
 .external-links {
   display: none;
+  margin-inline-start: $m-32;
+  svg {
+    width: 32px;
+    height: 32px;
+    fill: $dark-color;
+    &:hover {
+      fill: $blue-color;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -68,7 +101,7 @@ ul {
     background-color: $white-color;
     display: flex;
     flex-direction: column;
-    padding: $spacing-block 0 0 $m-32;
+    padding: $spacing-block 0 0 $m-16;
     gap: $spacing-block;
     .nav-links-list {
       display: flex;
@@ -83,7 +116,6 @@ ul {
   }
   .external-links {
     display: block;
-    margin-block-end: $spacing-block;
     ul {
       display: flex;
       flex-direction: row;

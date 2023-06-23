@@ -10,7 +10,7 @@
   h1,
   h2,
   h3 {
-    font-size: clamp(2rem, 5vw, 5rem);
+    font-size: clamp(2rem, 4.5vw, 5rem);
     font-weight: 800;
     line-height: 1.2;
     em {
@@ -94,6 +94,7 @@ aside {
   .intro {
     padding-inline: $spacing-inline-mobile;
     padding-block: $spacing-block-mobile;
+    gap: $m-48;
   }
   .intro-image {
     width: 80%;
