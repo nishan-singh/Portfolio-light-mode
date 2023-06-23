@@ -65,6 +65,12 @@ figure {
   }
 }
 
+@media (min-width: 1500px) {
+  .projects-wrapper {
+    padding-inline: $spacing-inline-bigger;
+  }
+}
+
 @media (min-width: 1300px) {
   figure {
     justify-content: initial;

@@ -48,6 +48,12 @@ p {
   font-size: 1.25rem;
 }
 
+@media (min-width: 1500px) {
+  footer {
+    padding-inline: $spacing-inline-bigger;
+  }
+}
+
 @media (max-width: 768px) {
   footer {
     flex-direction: column;

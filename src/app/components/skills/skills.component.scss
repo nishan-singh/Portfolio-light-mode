@@ -37,6 +37,12 @@ svg {
   height: 48px;
 }
 
+@media (min-width: 1500px) {
+  .skills-wrapper {
+    padding-inline: $spacing-inline-bigger;
+  }
+}
+
 @media (max-width: 1024px) {
   .skills-wrapper {
     gap: $m-32;

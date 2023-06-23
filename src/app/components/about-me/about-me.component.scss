@@ -89,6 +89,12 @@ table {
   }
 }
 
+@media (min-width: 1500px) {
+  .about-me {
+    padding-inline: $spacing-inline-bigger;
+  }
+}
+
 @media (max-width: 768px) {
   .about-me {
     padding: $spacing-block-mobile $spacing-inline-mobile;

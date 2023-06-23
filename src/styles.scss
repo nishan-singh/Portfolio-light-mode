@@ -54,6 +54,11 @@ textarea {
   font-family: "Karla", sans-serif;
 }
 
+p,
+a {
+  font-size: clamp(1rem, 3vw, 1.125rem);
+}
+
 h1,
 h2,
 h3 {

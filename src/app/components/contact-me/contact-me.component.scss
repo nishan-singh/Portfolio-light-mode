@@ -12,6 +12,62 @@
   flex: 1;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  gap: $m-32;
+  p {
+    position: relative;
+    input,
+    textarea {
+      background-color: $white-color;
+      border: 1px solid #eee;
+      padding: $input-padding;
+      border-radius: 4px;
+      position: relative;
+      width: 100%;
+      &:focus {
+        outline: transparent;
+      }
+    }
+    .required-message {
+      color: #e61c40;
+      font-size: 0.75rem;
+    }
+    svg {
+      position: absolute;
+      right: 12px;
+      top: 14px;
+    }
+  }
+  button {
+    width: max-content;
+  }
+  .mail-sent {
+    position: fixed;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    background-color: $dark-color;
+    color: $white-color;
+    display: flex;
+    border-radius: 8px;
+    gap: $m-12;
+    padding: $btn-padding;
+    align-items: center;
+    justify-content: center;
+    transition: bottom 0.3s ease-in-out;
+    width: max-content;
+    svg {
+      position: initial;
+    }
+  }
+  .pop-up {
+    bottom: 16px;
+  }
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -20,9 +76,7 @@
 
 input,
 textarea {
-  padding: $input-padding;
   font-size: 17px;
-  border: 1px solid #eee;
   &:focus {
     border-color: #ccc;
   }
@@ -62,6 +116,12 @@ textarea {
     &:hover {
       border-color: transparent;
     }
+  }
+}
+
+@media (min-width: 1500px) {
+  .contact-wrapper {
+    padding-inline: $spacing-inline-bigger;
   }
 }
 

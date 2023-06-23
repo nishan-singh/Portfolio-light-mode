@@ -85,6 +85,12 @@ header {
   }
 }
 
+@media (min-width: 1500px) {
+  header {
+    padding-inline: $spacing-inline-bigger;
+  }
+}
+
 @media (max-width: 768px) {
   header {
     padding-inline: $spacing-inline-mobile;

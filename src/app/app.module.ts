@@ -11,6 +11,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ContactMeComponent } from './components/contact-me/contact-me.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ImprintComponent } from './components/imprint/imprint.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,13 +23,10 @@ import { ImprintComponent } from './components/imprint/imprint.component';
     SkillsComponent,
     ContactMeComponent,
     FooterComponent,
-    ImprintComponent
+    ImprintComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

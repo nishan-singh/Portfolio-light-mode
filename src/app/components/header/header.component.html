@@ -1,12 +1,12 @@
 <header>
-  <a [routerLink]="['/']" fragment="home">
+  <a routerLink="/" fragment="home">
     <h2 class="logo">N<strong>S</strong></h2>
   </a>
   <nav #navLinks>
     <ul class="nav-links-list">
       <li>
         <a
-          [routerLink]="['/']"
+          routerLink="/"
           fragment="about-me"
           class="each-nav-link"
           (click)="toggleNavLinks()"
@@ -15,7 +15,7 @@
       </li>
       <li>
         <a
-          [routerLink]="['/']"
+          routerLink="/"
           fragment="skills"
           class="each-nav-link"
           (click)="toggleNavLinks()"
@@ -24,7 +24,7 @@
       </li>
       <li>
         <a
-          [routerLink]="['/']"
+          routerLink="/"
           fragment="portfolio"
           class="each-nav-link"
           (click)="toggleNavLinks()"
@@ -33,7 +33,7 @@
       </li>
       <li>
         <a
-          [routerLink]="['/']"
+          routerLink="/"
           fragment="contact"
           class="each-nav-link"
           (click)="toggleNavLinks()"
