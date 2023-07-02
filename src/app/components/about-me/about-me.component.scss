@@ -34,6 +34,8 @@
     color: $main-color;
     margin-block-end: $m-16;
     flex-basis: 85%;
+    max-width: 65ch;
+
     em,
     a {
       font-style: normal;
@@ -49,6 +51,7 @@
       display: flex;
       align-items: center;
       gap: $m-16;
+      max-width: 65ch;
     }
     svg {
       flex-basis: 15%;

@@ -24,7 +24,7 @@
 figure {
   display: flex;
   justify-content: space-between;
-  gap: $m-48;
+  gap: 120px;
   &:nth-child(even) {
     flex-direction: row-reverse;
   }
@@ -66,8 +66,27 @@ figure {
 }
 
 @media (min-width: 1500px) {
+  .projects {
+    gap: 120px;
+  }
   .projects-wrapper {
     padding-inline: $spacing-inline-bigger;
+  }
+  figure {
+    img {
+      width: 700px;
+    }
+  }
+}
+
+@media (min-width: 1800px) {
+  .projects-wrapper {
+    padding-inline: $spacing-inline-bigger;
+  }
+  figure {
+    img {
+      width: 1000px;
+    }
   }
 }
 

@@ -5,7 +5,7 @@
   padding: $spacing-block $spacing-inline;
   display: flex;
   flex-direction: column;
-  gap: $m-12;
+  gap: $m-32;
   min-height: calc(100vh - 288px);
 }
 
@@ -19,6 +19,12 @@ h2 {
 
 p {
   line-height: 1.8;
+}
+
+@media (min-width: 1500px) {
+  .imprint-wrapper {
+    padding-inline: $spacing-inline-bigger;
+  }
 }
 
 @media (max-width: 768px) {

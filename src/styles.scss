@@ -17,6 +17,8 @@ body {
   font-family: "Karla", sans-serif;
   background-color: $white-color;
   color: $dark-color;
+  width: 100%;
+  max-width: 2480px;
 }
 
 main {
@@ -81,5 +83,26 @@ h3 {
     border-color: $dark-color;
     background-color: $white-color;
     color: $dark-color;
+  }
+}
+
+// q: custom scrollbar
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: $white-color;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $blue-color;
+  border-radius: 10px;
+}
+
+@media (min-width: 1500px) {
+  html {
+    display: flex;
+    justify-content: center;
+  }
+  main {
+    border-left: 1px solid $yellow-color;
   }
 }

@@ -15,6 +15,9 @@
   h2 {
     font-size: $heading-font-size;
   }
+  p {
+    max-width: 50ch;
+  }
 }
 
 .skills-list {

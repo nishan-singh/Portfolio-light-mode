@@ -5,21 +5,67 @@
   display: flex;
   align-items: center;
   padding-inline: $spacing-inline;
-  height: calc(100vh - $header-height);
-  height: calc(100dvh - $header-height);
-  h1,
-  h2,
-  h3 {
-    font-size: clamp(2rem, 4.5vw, 4rem);
-    font-weight: 800;
-    line-height: 1.2;
-    em {
-      color: $blue-color;
-      font-style: normal;
-    }
-  }
+  min-height: calc(80vh - $header-height);
+  min-height: calc(80dvh - $header-height);
+
   p {
     margin-block: $m-32;
+  }
+}
+em,
+h1,
+h2,
+h3 {
+  font-size: clamp(2rem, 4.5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.2;
+  position: relative;
+  width: fit-content;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+  }
+}
+
+em {
+  color: $blue-color;
+  font-style: normal;
+  &::before {
+    background-color: $light-color;
+    animation: typewriter 500ms steps(7) 250ms forwards;
+  }
+}
+
+h2 {
+  &::before {
+    background-color: $light-color;
+    animation: typewriter 1.5s steps(18) 1s forwards;
+  }
+  &::after {
+    width: 0.25rem;
+    bottom: 6px;
+    background-color: $yellow-color;
+    animation: typewriter 1.5s steps(18) 1s forwards,
+      blink 750ms forwards infinite;
+  }
+}
+
+@keyframes typewriter {
+  100% {
+    left: 100%;
+  }
+}
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
