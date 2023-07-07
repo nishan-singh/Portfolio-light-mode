@@ -117,6 +117,8 @@ aside {
   .intro {
     padding-inline: $spacing-inline-bigger;
   }
+}
+@media (min-width: 1500px) {
   .intro-image {
     img {
       max-width: 55%;

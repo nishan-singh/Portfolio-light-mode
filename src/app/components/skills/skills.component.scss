@@ -40,9 +40,9 @@ svg {
   height: 48px;
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1500px) and (min-height: 1200px) {
   .skills-wrapper {
-    padding-inline: $spacing-inline-bigger;
+    padding: $spacing-block-bigger $spacing-inline-bigger;
   }
 }
 

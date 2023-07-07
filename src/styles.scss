@@ -18,7 +18,7 @@ body {
   background-color: $white-color;
   color: $dark-color;
   width: 100%;
-  max-width: 2480px;
+  max-width: 2048px;
 }
 
 main {
@@ -97,12 +97,13 @@ h3 {
   border-radius: 10px;
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 2048px) {
   html {
     display: flex;
     justify-content: center;
   }
   main {
     border-left: 1px solid $yellow-color;
+    margin-inline: 5%;
   }
 }

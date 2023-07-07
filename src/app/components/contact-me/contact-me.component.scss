@@ -99,7 +99,7 @@ textarea {
   h2,
   p {
     margin-block-end: $m-16;
-    max-width: 60vh;
+    max-width: 50ch;
   }
 }
 
@@ -120,9 +120,9 @@ textarea {
   }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1500px) and (min-height: 1200px) {
   .contact-wrapper {
-    padding-inline: $spacing-inline-bigger;
+    padding: $spacing-block-bigger $spacing-inline-bigger;
   }
 }
 
