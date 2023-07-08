@@ -48,9 +48,11 @@ p {
   font-size: 1.25rem;
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 2048px) {
   footer {
     padding-inline: $spacing-inline-bigger;
+    max-width: 2048px;
+    margin-inline: 5%;
   }
 }
 

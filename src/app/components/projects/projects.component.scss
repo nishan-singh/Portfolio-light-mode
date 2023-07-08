@@ -65,7 +65,7 @@ figure {
   }
 }
 
-@media (min-width: 1500px) and (min-height: 1200px) {
+@media (min-width: 2048px) {
   .project-info {
     h2 {
       margin-block-end: $m-48;
@@ -85,9 +85,6 @@ figure {
 }
 
 @media (min-width: 1800px) {
-  .projects-wrapper {
-    padding-inline: $spacing-inline-bigger;
-  }
   figure {
     img {
       width: 1000px;

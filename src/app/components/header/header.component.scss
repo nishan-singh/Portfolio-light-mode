@@ -86,14 +86,10 @@ header {
 }
 @media (min-width: 2048px) {
   header {
+    max-width: 2048px;
     margin-inline: 5%;
     width: auto;
-  }
-}
-@media (min-width: 1500px) and (min-height: 1200px) {
-  header {
     padding-inline: $spacing-inline-bigger;
-    margin-inline: 5%;
   }
 }
 

@@ -21,9 +21,10 @@ p {
   line-height: 1.8;
 }
 
-@media (min-width: 1500px) and (min-height: 1200px) {
+@media (min-width: 2048px) {
   .imprint-wrapper {
     padding-inline: $spacing-inline-bigger;
+    max-width: 2048px;
   }
 }
 
