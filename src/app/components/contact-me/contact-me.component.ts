@@ -21,13 +21,10 @@ export class ContactMeComponent {
     formDataToSend.append('name', this.name.nativeElement.value);
     formDataToSend.append('message', this.message.nativeElement.value);
 
-    await fetch(
-      'https://portfolio-2.nishan-singh.com/send_mail/send_mail.php',
-      {
-        method: 'POST',
-        body: formDataToSend,
-      }
-    );
+    await fetch('https://nishan-singh.com/send_mail/send_mail.php', {
+      method: 'POST',
+      body: formDataToSend,
+    });
 
     this.isMailSent = true;
     this.togglePopUp();
