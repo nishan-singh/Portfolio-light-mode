@@ -6,7 +6,7 @@ header {
   width: 100%;
   height: $header-height;
   background-color: #fff;
-  padding-inline: $spacing-inline;
+  padding-inline: $spacing-inline-normal;
   z-index: 100;
   display: flex;
   justify-content: space-between;
@@ -90,6 +90,12 @@ header {
     margin-inline: 5%;
     width: auto;
     padding-inline: $spacing-inline-bigger;
+  }
+}
+
+@media (max-width: 872px) {
+  header {
+    padding-inline: $spacing-inline-small;
   }
 }
 

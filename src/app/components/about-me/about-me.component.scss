@@ -3,7 +3,7 @@
 .about-me {
   display: flex;
   justify-content: center;
-  padding: $spacing-block $spacing-inline;
+  padding: $spacing-block $spacing-inline-normal;
   color: $dark-color;
   gap: $m-48;
 }
@@ -96,6 +96,11 @@ table {
 @media (min-width: 2048px) {
   .about-me {
     padding: $spacing-block-bigger $spacing-inline-bigger;
+  }
+}
+@media (max-width: 872px) {
+  .about-me {
+    padding-inline: $spacing-inline-normal;
   }
 }
 

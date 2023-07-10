@@ -4,7 +4,7 @@
   background-color: $light-color;
   display: flex;
   align-items: center;
-  padding-inline: $spacing-inline;
+  padding-inline: $spacing-inline-normal;
   min-height: calc(80vh - $header-height);
   min-height: calc(80dvh - $header-height);
 
@@ -136,10 +136,11 @@ aside {
     }
   }
   .intro {
+    padding-inline: $spacing-inline-small;
     flex-direction: column-reverse;
-    padding-inline: $spacing-inline-mobile;
     padding-block: $spacing-block-mobile;
     height: auto;
+    gap: $m-48;
   }
   .intro-text {
     width: 100%;

@@ -1,7 +1,7 @@
 @import "../../../variables.scss";
 
 .projects-wrapper {
-  padding: $spacing-block $spacing-inline;
+  padding: $spacing-block $spacing-inline-normal;
 }
 
 .project-info {
@@ -110,6 +110,9 @@ figure {
 }
 
 @media (max-width: 872px) {
+  .projects-wrapper {
+    padding-inline: $spacing-inline-small;
+  }
   .projects {
     gap: $m-32;
   }

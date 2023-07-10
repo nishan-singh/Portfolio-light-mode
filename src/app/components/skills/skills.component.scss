@@ -4,7 +4,7 @@
   background-color: $light-color-2;
   display: flex;
   gap: $m-48;
-  padding: $spacing-block $spacing-inline;
+  padding: $spacing-block $spacing-inline-normal;
 }
 
 .skills-text-wrapper {
@@ -58,6 +58,11 @@ svg {
   }
   ul {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 872px) {
+  .skills-wrapper {
+    padding-inline: $spacing-inline-small;
   }
 }
 
