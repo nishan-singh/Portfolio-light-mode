@@ -100,22 +100,16 @@ figure {
     }
   }
 }
-
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   figure {
-    img {
-      width: 400px;
-    }
+    gap: $m-48;
+  }
+  .github-link {
+    margin-inline-end: $m-16;
   }
 }
 
-@media (max-width: 872px) {
-  .projects-wrapper {
-    padding-inline: $spacing-inline-small;
-  }
-  .projects {
-    gap: $m-32;
-  }
+@media (max-width: 1024px) {
   figure {
     background: linear-gradient($yellow-color, $yellow-color) top left,
       linear-gradient($yellow-color, $yellow-color) top left,
@@ -136,9 +130,21 @@ figure {
     img {
       width: 100%;
     }
+    .github-link {
+      margin-inline-end: $m-8;
+    }
+  }
+
+  @media (max-width: 872px) {
+    .projects-wrapper {
+      padding-inline: $spacing-inline-small;
+    }
+    .projects {
+      gap: $m-32;
+    }
   }
   .github-link {
-    margin-inline-end: $m-16;
+    margin-inline-end: $m-8;
   }
 }
 

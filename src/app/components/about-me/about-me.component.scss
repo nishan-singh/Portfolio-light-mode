@@ -100,14 +100,14 @@ table {
 }
 @media (max-width: 872px) {
   .about-me {
-    padding-inline: $spacing-inline-normal;
+    flex-direction: column;
+    padding-inline: $spacing-inline-small;
   }
 }
 
 @media (max-width: 768px) {
   .about-me {
     padding: $spacing-block-mobile $spacing-inline-mobile;
-    flex-direction: column;
     align-items: flex-start;
     gap: $m-32;
   }
