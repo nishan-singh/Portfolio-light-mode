@@ -2,7 +2,7 @@
 
 .imprint-wrapper {
   background-color: #fff5f6;
-  padding: $spacing-block $spacing-inline;
+  padding: $spacing-block $spacing-inline-normal;
   display: flex;
   flex-direction: column;
   gap: $m-32;
@@ -25,6 +25,12 @@ p {
   .imprint-wrapper {
     padding-inline: $spacing-inline-bigger;
     max-width: 2048px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .imprint-wrapper {
+    padding-inline: $spacing-inline-small;
   }
 }
 

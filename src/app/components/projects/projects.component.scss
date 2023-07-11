@@ -110,6 +110,9 @@ figure {
 }
 
 @media (max-width: 1024px) {
+  .projects-wrapper {
+    padding-inline: $spacing-inline-small;
+  }
   figure {
     background: linear-gradient($yellow-color, $yellow-color) top left,
       linear-gradient($yellow-color, $yellow-color) top left,
@@ -131,14 +134,11 @@ figure {
       width: 100%;
     }
     .github-link {
-      margin-inline-end: $m-8;
+      margin-inline-end: $m-32;
     }
   }
 
   @media (max-width: 872px) {
-    .projects-wrapper {
-      padding-inline: $spacing-inline-small;
-    }
     .projects {
       gap: $m-32;
     }

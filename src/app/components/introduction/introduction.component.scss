@@ -126,6 +126,11 @@ aside {
     }
   }
 }
+@media (max-width: 1024px) {
+  .intro {
+    padding-inline: $spacing-inline-small;
+  }
+}
 
 @media (max-width: 872px) {
   .intro {
@@ -136,7 +141,6 @@ aside {
     }
   }
   .intro {
-    padding-inline: $spacing-inline-small;
     flex-direction: column-reverse;
     padding-block: $spacing-block-mobile;
     height: auto;

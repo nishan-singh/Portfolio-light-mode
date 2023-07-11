@@ -126,9 +126,14 @@ textarea {
   }
 }
 
-@media (max-width: 872px) {
+@media (max-width: 1024px) {
   .contact-wrapper {
     padding-inline: $spacing-inline-small;
+  }
+}
+
+@media (max-width: 872px) {
+  .contact-wrapper {
     flex-direction: column;
     gap: $m-8;
   }

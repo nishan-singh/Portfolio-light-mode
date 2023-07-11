@@ -98,10 +98,16 @@ table {
     padding: $spacing-block-bigger $spacing-inline-bigger;
   }
 }
+@media (max-width: 1024px) {
+  .about-me {
+    gap: $m-16;
+    padding-inline: $spacing-inline-small;
+  }
+}
+
 @media (max-width: 872px) {
   .about-me {
     flex-direction: column;
-    padding-inline: $spacing-inline-small;
   }
 }
 

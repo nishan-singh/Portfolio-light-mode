@@ -49,6 +49,7 @@ svg {
 @media (max-width: 1024px) {
   .skills-wrapper {
     gap: $m-32;
+    padding-inline: $spacing-inline-small;
   }
   .skills-text-wrapper {
     flex-basis: 50%;
@@ -58,11 +59,6 @@ svg {
   }
   ul {
     grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (max-width: 872px) {
-  .skills-wrapper {
-    padding-inline: $spacing-inline-small;
   }
 }
 
