@@ -31,10 +31,17 @@ h3 {
   width: fit-content;
 }
 
+em {
+  color: $blue-color;
+  font-style: normal;
+  backdrop-filter: blur(8px);
+}
+
 h2 {
   overflow: hidden;
   white-space: nowrap;
-  border-right: 2px solid orange;
+  animation: typewriter 2s steps(18) 2s forwards;
+  width: 0;
 }
 
 @keyframes typewriter {
@@ -46,22 +53,12 @@ h2 {
   }
 }
 
-em {
-  color: $blue-color;
-  font-style: normal;
-  backdrop-filter: blur(8px);
+h3 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s ease-in-out 4s forwards;
 }
 
-@keyframes typewriter {
-  100% {
-    left: 100%;
-  }
-}
-@keyframes blink {
-  to {
-    background: transparent;
-  }
-}
 @keyframes fadeIn {
   to {
     opacity: 1;
