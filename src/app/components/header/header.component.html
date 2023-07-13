@@ -1,4 +1,4 @@
-<header>
+<header #header>
   <a routerLink="/" fragment="home">
     <h2 class="logo">N<strong>S</strong></h2>
   </a>
@@ -107,13 +107,14 @@
   <button
     type="button"
     class="toggle-btn"
+    #toggleBtn
     (click)="toggleNavLinks()"
     [attr.aria-expanded]="hamburgerAnimation"
   >
     <svg width="24" height="24" viewBox="0 0 32 31" class="hamburger">
-      <rect width="32" height="2.5" x="0" y="5" fill="#130f49" />
-      <rect width="32" height="2.5" x="0" y="16" fill="#130f49" />
-      <rect width="32" height="2.5" x="0" y="27" fill="#130f49" />
+      <rect width="32" height="2.5" x="0" y="5" />
+      <rect width="32" height="2.5" x="0" y="16" />
+      <rect width="32" height="2.5" x="0" y="27" />
     </svg>
   </button>
 </header>

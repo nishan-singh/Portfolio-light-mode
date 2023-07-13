@@ -1,22 +1,37 @@
 @import "../../../variables";
 
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   height: $header-height;
-  background-color: #fff;
   padding-inline: $spacing-inline-normal;
   z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-scrolled {
+  background-color: $white-color;
+  .each-nav-link,
+  .logo {
+    color: $dark-color;
+  }
+  .toggle-btn {
+    svg {
+      fill: $dark-color;
+    }
+  }
 }
 
 .logo {
   font-size: 2rem;
   font-weight: 600;
-  color: $dark-color;
+  color: $white-color;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
   strong {
@@ -35,12 +50,19 @@ header {
     margin-inline-start: $m-32;
   }
 }
+.each-nav-link {
+  color: $white-color;
+}
 
 .toggle-btn {
   display: none;
+  svg {
+    fill: $white-color;
+  }
   @media (max-width: 768px) {
     display: block;
     font-size: 2rem;
+    z-index: 99;
   }
 }
 
@@ -66,8 +88,13 @@ header {
   }
 }
 
+.open {
+  svg {
+    fill: $dark-color;
+  }
+}
+
 .each-nav-link {
-  color: $dark-color;
   font-weight: 600;
   font-size: 1.2rem;
 }
@@ -86,10 +113,7 @@ header {
 }
 @media (min-width: 2048px) {
   header {
-    max-width: 2048px;
-    margin-inline: 5%;
-    width: auto;
-    padding-inline: $spacing-inline-bigger;
+    padding-inline: 12%;
   }
 }
 
@@ -109,10 +133,13 @@ header {
   header {
     padding-inline: $spacing-inline-mobile;
   }
+  .each-nav-link {
+    color: $dark-color;
+  }
   nav {
     position: fixed;
     transform: translateX(232px);
-    top: $header-height;
+    top: 0;
     right: 0;
     width: 232px;
     height: 100%;

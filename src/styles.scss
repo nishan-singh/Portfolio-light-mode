@@ -18,7 +18,11 @@ body {
   background-color: $white-color;
   color: $dark-color;
   width: 100%;
+}
+
+app-header {
   max-width: 2048px;
+  margin-inline: auto;
 }
 
 main {
@@ -102,8 +106,10 @@ h3 {
     display: flex;
     justify-content: center;
   }
-  main {
-    border-left: 1px solid $yellow-color;
+  .container {
     margin-inline: 5%;
+  }
+  .imprint-wrapper {
+    margin-inline: auto;
   }
 }

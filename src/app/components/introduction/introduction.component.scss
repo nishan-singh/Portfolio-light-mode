@@ -1,55 +1,40 @@
 @import "../../../variables.scss";
 
 .intro {
-  background-color: $light-color;
+  // background: url("/assets/img/hero-bg.jpg") no-repeat center center/cover;
+  background: url(/assets/img/hero-bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: $dark-color;
   display: flex;
   align-items: center;
+  justify-content: center;
+  color: $white-color;
   padding-inline: $spacing-inline-normal;
-  min-height: calc(80vh - $header-height);
-  min-height: calc(80dvh - $header-height);
-
+  min-height: 100vh;
+  min-width: 100%;
   p {
     margin-block: $m-32;
   }
 }
+
 em,
 h1,
 h2,
 h3 {
-  font-size: clamp(2rem, 4.5vw, 4rem);
+  font-size: clamp(2.05rem, 5vw, 4rem);
   font-weight: 800;
   line-height: 1.2;
   position: relative;
   width: fit-content;
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-  }
 }
 
 em {
   color: $blue-color;
   font-style: normal;
-  &::before {
-    background-color: $light-color;
-    animation: typewriter 500ms steps(7) 250ms forwards;
-  }
-}
-
-h2 {
-  &::before {
-    background-color: $light-color;
-    animation: typewriter 1.5s steps(18) 1s forwards;
-  }
-  &::after {
-    width: 0.25rem;
-    bottom: 6px;
-    background-color: $yellow-color;
-    animation: typewriter 1.5s steps(18) 1s forwards,
-      blink 750ms forwards infinite;
-  }
+  backdrop-filter: blur(8px);
 }
 
 @keyframes typewriter {
@@ -69,20 +54,12 @@ h2 {
   }
 }
 
-.intro-text {
-  flex-basis: 60%;
-}
-
 .default-btn {
   margin-block: $m-32;
-}
-
-.intro-image {
-  flex-basis: 40%;
-  display: flex;
-  justify-content: center;
-  img {
-    max-width: 80%;
+  font-weight: 600;
+  &:hover {
+    background-color: transparent;
+    color: $white-color;
   }
 }
 
@@ -102,28 +79,15 @@ aside {
   a {
     margin: $m-8 $m-16;
     font-weight: 600;
-    color: $dark-color;
+    backdrop-filter: blur(4px);
+    color: $white-color;
     width: fit-content;
-  }
-}
-@media (min-width: 1200px) {
-  .intro-image {
-    img {
-      max-width: 65%;
-    }
   }
 }
 
 @media (min-width: 2048px) {
   .intro {
     padding-inline: $spacing-inline-bigger;
-  }
-}
-@media (min-width: 1500px) {
-  .intro-image {
-    img {
-      max-width: 55%;
-    }
   }
 }
 @media (max-width: 1024px) {
@@ -159,14 +123,5 @@ aside {
     padding-inline: $spacing-inline-mobile;
     padding-block: $spacing-block-mobile;
     gap: $m-48;
-  }
-  .intro-image {
-    width: 80%;
-  }
-}
-
-@media (max-width: 576px) {
-  .intro-image {
-    width: 100%;
   }
 }
