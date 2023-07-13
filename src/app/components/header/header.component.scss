@@ -16,16 +16,30 @@ header {
 }
 
 .header-scrolled {
-  background-color: $white-color;
+  background-color: rgba($color: #fff, $alpha: 0.7);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   .each-nav-link,
   .logo {
     color: $dark-color;
+  }
+  .each-nav-link {
+    transition: color 125ms ease-in-out;
+    border-bottom: 2px solid transparent;
+    &:hover,
+    &:focus {
+      border-color: $yellow-color;
+    }
   }
   .toggle-btn {
     svg {
       fill: $dark-color;
     }
   }
+}
+
+.active-link {
+  border-color: $yellow-color;
 }
 
 .logo {
