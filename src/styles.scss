@@ -20,6 +20,13 @@ body {
   width: 100%;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Inter", sans-serif;
+  margin-block: 0;
+}
+
 app-header {
   max-width: 2048px;
   margin-inline: auto;
@@ -63,13 +70,6 @@ textarea {
 p,
 a {
   font-size: clamp(1rem, 3vw, 1.125rem);
-}
-
-h1,
-h2,
-h3 {
-  font-family: "Inter", sans-serif;
-  margin-block: 0;
 }
 
 .default-btn {

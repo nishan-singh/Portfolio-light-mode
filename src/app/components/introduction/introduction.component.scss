@@ -1,7 +1,7 @@
 @import "../../../variables.scss";
 
 .intro {
-  // background: url("/assets/img/hero-bg.jpg") no-repeat center center/cover;
+  background: url("/assets/img/hero-bg.jpg") no-repeat center center/cover;
   background: url(/assets/img/hero-bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -14,7 +14,7 @@
   color: $white-color;
   padding-inline: $spacing-inline-normal;
   min-height: 100vh;
-  min-width: 100%;
+  width: 100%;
   p {
     margin-block: $m-32;
   }
@@ -25,10 +25,7 @@ h1,
 h2,
 h3 {
   font-size: clamp(2.05rem, 5vw, 5rem);
-  font-weight: 800;
   line-height: 1.2;
-  position: relative;
-  width: fit-content;
 }
 
 em {
@@ -40,7 +37,7 @@ em {
 h2 {
   overflow: hidden;
   white-space: nowrap;
-  animation: typewriter 2s steps(18) 2s forwards;
+  animation: typewriter 2s steps(18) 1.5s forwards;
   width: 0;
 }
 
