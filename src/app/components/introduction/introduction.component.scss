@@ -1,20 +1,19 @@
 @import "../../../variables.scss";
 
 .intro {
-  background: url("/assets/img/hero-bg.jpg") no-repeat center center/cover;
   background: url(/assets/img/hero-bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-color: $dark-color;
+  min-height: 100dvh;
+  width: 100%;
+  padding-inline: $spacing-inline-normal;
+  color: $white-color;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: $white-color;
-  padding-inline: $spacing-inline-normal;
-  min-height: 100vh;
-  width: 100%;
   p {
     margin-block: $m-32;
   }
@@ -114,16 +113,9 @@ aside {
     }
   }
   .intro {
-    flex-direction: column-reverse;
     padding-block: $spacing-block-mobile;
     height: auto;
     gap: $m-48;
-  }
-  .intro-text {
-    width: 100%;
-  }
-  .intro-image {
-    width: 60%;
   }
 }
 

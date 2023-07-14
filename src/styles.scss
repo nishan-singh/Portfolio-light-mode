@@ -32,12 +32,6 @@ app-header {
   margin-inline: auto;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  min-height: calc(100vh - 288px);
-}
-
 app-footer {
   margin-top: auto;
 }
@@ -107,8 +101,7 @@ a {
     justify-content: center;
   }
   .container {
-    border-left: 1px solid $yellow-color;
-    margin-inline: 5%;
+    // padding-inline: 5%;
   }
   .imprint-wrapper {
     margin-inline: auto;

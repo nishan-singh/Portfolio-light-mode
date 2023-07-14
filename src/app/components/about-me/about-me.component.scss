@@ -35,8 +35,8 @@
     color: $main-color;
     margin-block-end: $m-16;
     flex-basis: 85%;
-    max-width: 65ch;
-
+    max-width: 75ch;
+    text-wrap: balance;
     em,
     a {
       font-style: normal;

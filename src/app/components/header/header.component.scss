@@ -127,7 +127,7 @@ header {
 }
 @media (min-width: 2048px) {
   header {
-    padding-inline: 12%;
+    padding-inline: $spacing-inline-bigger;
   }
 }
 
