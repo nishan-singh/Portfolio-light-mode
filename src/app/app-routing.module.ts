@@ -12,6 +12,10 @@ const routes: Routes = [
     path: 'imprint',
     component: ImprintComponent,
   },
+  {
+    path: '**',
+    component: IntroductionComponent,
+  },
 ];
 
 @NgModule({
