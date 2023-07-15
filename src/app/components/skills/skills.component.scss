@@ -33,6 +33,7 @@ ul {
     display: flex;
     flex-direction: column;
     gap: $m-8;
+    text-align: center;
   }
 }
 
@@ -44,6 +45,11 @@ svg {
 @media (min-width: 2048px) {
   .skills-wrapper {
     padding: $spacing-block-bigger $spacing-inline-bigger;
+  }
+  ul {
+    li {
+      align-items: center;
+    }
   }
 }
 
@@ -77,7 +83,7 @@ svg {
     grid-template-columns: repeat(3, 1fr);
     li {
       justify-content: center;
-      align-items: flex-start;
+      align-items: center;
     }
   }
 }
