@@ -8,7 +8,7 @@ header {
   width: 100%;
   height: $header-height;
   padding-inline: $spacing-inline-normal;
-  z-index: 100;
+  z-index: 5;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,11 +49,20 @@ header {
   text-decoration: none;
   transition: all 0.3s ease-in-out;
   strong {
-    color: $blue-color;
+    animation: addedColor 0ms linear 1.1s forwards;
   }
   &:hover,
   &:focus {
     color: $yellow-color;
+  }
+}
+
+@keyframes addedColor {
+  from {
+    color: $white-color;
+  }
+  to {
+    color: $blue-color;
   }
 }
 

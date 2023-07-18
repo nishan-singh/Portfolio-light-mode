@@ -1,13 +1,16 @@
 @import "../../../variables.scss";
 
+$opening-transition: 1.2s;
+$transition-delay: 0.75s;
+
 .intro {
-  background: url(/assets/img/hero-bg.jpg) no-repeat center center fixed;
+  background: url("/assets/img/hero-bg.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-color: $dark-color;
   min-height: 100dvh;
+  background-color: $dark-color;
   width: 100%;
   padding-inline: $spacing-inline-normal;
   display: flex;
@@ -15,8 +18,52 @@
   justify-content: center;
   color: $white-color;
   position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    background-color: #fff;
+    z-index: 10;
+    animation: fadeOutUp $opening-transition ease-in-out $transition-delay
+      forwards;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    background-color: #fff;
+    z-index: 10;
+    animation: fadeOutDown $opening-transition ease-in-out $transition-delay
+      forwards;
+  }
   p {
     margin-block: $m-32;
+  }
+}
+
+@keyframes fadeOutUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-110%);
+  }
+}
+
+@keyframes fadeOutDown {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
   }
 }
 
@@ -26,8 +73,7 @@ h2,
 h3 {
   font-size: clamp(2.05rem, 5vw, 5rem);
   line-height: 1.2;
-  font-weight: 800;
-  width: fit-content;
+  font-weight: inherit;
 }
 
 em {
@@ -39,7 +85,7 @@ em {
 h2 {
   overflow: hidden;
   white-space: nowrap;
-  animation: typewriter 1.5s steps(18) 0.5s forwards;
+  animation: typewriter 1.5s steps(18) $opening-transition forwards;
   width: 0;
 }
 
@@ -67,6 +113,8 @@ h3 {
 
 .default-btn {
   margin-block: $m-32;
+  position: relative;
+  z-index: -1;
   font-weight: 600;
   &:hover {
     background-color: transparent;
