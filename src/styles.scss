@@ -85,12 +85,12 @@ a {
 }
 
 // q: custom scrollbar
-::-webkit-scrollbar {
+html::-webkit-scrollbar {
   width: 6px;
-  background-color: $white-color;
+  background-color: transparent;
 }
 
-::-webkit-scrollbar-thumb {
+html::-webkit-scrollbar-thumb {
   background-color: $blue-color;
   border-radius: 10px;
 }
