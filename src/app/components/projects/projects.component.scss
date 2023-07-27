@@ -77,18 +77,13 @@ figure {
   .projects-wrapper {
     padding: $spacing-block-bigger $spacing-inline-bigger;
   }
-  figure {
-    img {
-      width: 700px;
-    }
-  }
 }
 
 @media (min-width: 1800px) {
   figure {
     justify-content: initial;
     img {
-      width: 1000px;
+      width: 700px;
     }
   }
 }
