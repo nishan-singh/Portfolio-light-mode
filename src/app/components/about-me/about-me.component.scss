@@ -6,6 +6,7 @@
   padding: $spacing-block $spacing-inline-normal;
   color: $dark-color;
   gap: $m-48;
+  isolation: isolate;
 }
 
 .personal-infos {
@@ -60,10 +61,6 @@
       height: 48px;
     }
   }
-}
-
-.deco {
-  max-width: fit-content;
 }
 
 table {

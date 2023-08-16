@@ -95,6 +95,11 @@ html::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
 
+// rough notation
+.rough-annotation {
+  z-index: -1;
+}
+
 @media (min-width: 2048px) {
   .imprint-wrapper {
     margin-inline: auto;

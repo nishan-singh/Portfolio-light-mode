@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 import { annotate } from 'rough-notation';
 
 @Component({
@@ -7,18 +7,31 @@ import { annotate } from 'rough-notation';
   styleUrls: ['./about-me.component.scss'],
 })
 export class AboutMeComponent {
-  @ViewChild('highlightElm') hightLightElm: any;
-
-  constructor() {}
-
   ngOnInit(): void {
-    let highLight = document.querySelector('#highlightElm') as HTMLElement;
-    let annotation = annotate(highLight, {
+    let highLights = document.querySelector('#highlightElm') as HTMLElement;
+    let annotation = annotate(highLights, {
       type: 'highlight',
       color: '#f9d423',
-      padding: [5, 2],
       multiline: true,
+      animationDuration: 1000,
     });
-    annotation.show();
+
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          annotation.show();
+        } else {
+          return;
+        }
+      });
+    }, options);
+
+    observer.observe(document.querySelector('#highlightElm') as HTMLElement);
   }
 }
