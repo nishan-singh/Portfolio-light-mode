@@ -41,7 +41,7 @@ export class AboutMeComponent {
 
   underlineHeading() {
     let underlineHeading = annotate(
-      document.querySelector('#hd-underline') as HTMLElement,
+      document.querySelector('#about-me-hd-underline') as HTMLElement,
       this.underlineSetting('#75C2F6')
     );
     underlineHeading.show();
