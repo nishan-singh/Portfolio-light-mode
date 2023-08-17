@@ -30,6 +30,6 @@ export class AboutMeComponent {
       markSetting
     );
     this.annotation = annotationGroup([markElem1, markElem2]);
-    this.annotation.show();
+    // this.annotation.show();
   }
 }

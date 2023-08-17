@@ -199,11 +199,6 @@ aside {
     gap: $m-48;
   }
 }
-@media (max-width: 572px) {
-  .intro {
-    justify-content: flex-start;
-  }
-}
 
 @media (max-width: 360px) {
   em,
