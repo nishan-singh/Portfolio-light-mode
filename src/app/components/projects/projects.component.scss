@@ -2,6 +2,7 @@
 
 .projects-wrapper {
   padding: $spacing-block $spacing-inline-normal;
+  isolation: isolate;
 }
 
 .project-info {

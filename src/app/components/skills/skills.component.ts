@@ -16,7 +16,7 @@ export class SkillsComponent {
       document.querySelector('#skill-hd-underline') as HTMLElement,
       {
         type: 'underline',
-        color: '#A8DF8E',
+        color: '#279EFF',
         strokeWidth: 3,
       }
     );

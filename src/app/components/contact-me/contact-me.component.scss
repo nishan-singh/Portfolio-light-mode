@@ -5,6 +5,7 @@
   padding: $spacing-block $spacing-inline-normal;
   display: flex;
   gap: $m-48 * 2;
+  isolation: isolate;
 }
 
 .info-about-me,
@@ -93,12 +94,17 @@ textarea {
 }
 
 .info-about-me {
-  h2 {
-    font-size: $heading-font-size;
-  }
+  isolation: isolate;
   h2,
   p {
     margin-block-end: $m-16;
+  }
+  h2 {
+    font-size: $heading-font-size;
+    max-width: fit-content;
+    position: relative;
+  }
+  p {
     max-width: 50ch;
   }
 }

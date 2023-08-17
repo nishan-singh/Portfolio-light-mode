@@ -1,4 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
+import { annotate } from 'rough-notation';
 
 @Component({
   selector: 'app-contact-me',
@@ -15,6 +16,10 @@ export class ContactMeComponent {
   isEmailEmpty = false;
   isMessageEmpty = false;
   isMailSent = false;
+
+  ngOnInit(): void {
+    this.underlineHeading();
+  }
 
   async sendMail() {
     let formDataToSend = new FormData();
@@ -52,5 +57,17 @@ export class ContactMeComponent {
 
   checkIfMessageEmpty() {
     this.isMessageEmpty = this.message.nativeElement.value.length <= 25;
+  }
+
+  underlineHeading() {
+    let underlineHeading = annotate(
+      document.querySelector('#contact-hd-underline') as HTMLElement,
+      {
+        type: 'underline',
+        color: '#A8DF8E',
+        strokeWidth: 3,
+      }
+    );
+    underlineHeading.show();
   }
 }
