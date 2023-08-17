@@ -1,5 +1,9 @@
 @import "../../../variables.scss";
 
+em {
+  font-style: normal;
+}
+
 .about-me {
   display: flex;
   justify-content: center;
@@ -38,7 +42,7 @@
     flex-basis: 85%;
     max-width: 75ch;
 
-    em,
+    .highlighted-text,
     a {
       font-style: normal;
       color: $yellow-color;
