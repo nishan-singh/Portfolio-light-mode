@@ -52,7 +52,7 @@ export class AboutMeComponent {
       type: 'highlight',
       color: color,
       multiline: true,
-      animate: true,
+      animate: false,
     } as RoughAnnotationConfig;
   }
 
