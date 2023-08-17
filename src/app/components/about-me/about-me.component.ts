@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { annotate } from 'rough-notation';
+import { annotate, annotationGroup } from 'rough-notation';
+import { RoughAnnotationConfig } from 'rough-notation/lib/model';
 
 @Component({
   selector: 'app-about-me',
@@ -7,31 +8,28 @@ import { annotate } from 'rough-notation';
   styleUrls: ['./about-me.component.scss'],
 })
 export class AboutMeComponent {
+  annotation: any;
+
   ngOnInit(): void {
-    let highLights = document.querySelector('#highlightElm') as HTMLElement;
-    let annotation = annotate(highLights, {
+    this.markText();
+  }
+
+  markText() {
+    let markSetting = {
       type: 'highlight',
       color: '#f9d423',
       multiline: true,
-      animationDuration: 1000,
-    });
-
-    const options = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.5,
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          annotation.show();
-        } else {
-          return;
-        }
-      });
-    }, options);
-
-    observer.observe(document.querySelector('#highlightElm') as HTMLElement);
+      padding: [2, 2],
+    } as RoughAnnotationConfig;
+    let markElem1 = annotate(
+      document.querySelector('#highlight1') as HTMLElement,
+      markSetting
+    );
+    let markElem2 = annotate(
+      document.querySelector('#highlight2') as HTMLElement,
+      markSetting
+    );
+    this.annotation = annotationGroup([markElem1, markElem2]);
+    this.annotation.show();
   }
 }

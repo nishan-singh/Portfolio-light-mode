@@ -13,6 +13,7 @@ $transition-delay: 1s;
   width: 100%;
   padding-inline: $spacing-inline-normal;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: $white-color;
@@ -145,6 +146,23 @@ aside {
     backdrop-filter: blur(4px);
     color: $white-color;
     width: fit-content;
+  }
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: $m-48;
+  animation: scroll 1000ms ease-in-out infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(28px);
+    opacity: 1;
   }
 }
 
