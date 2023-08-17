@@ -5,6 +5,7 @@
   display: flex;
   gap: $m-48;
   padding: $spacing-block $spacing-inline-normal;
+  isolation: isolate;
 }
 
 .skills-text-wrapper {

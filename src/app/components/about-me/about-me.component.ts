@@ -68,7 +68,6 @@ export class AboutMeComponent {
       type: 'underline',
       color: color,
       strokeWidth: 3,
-      padding: [2, 2],
     } as RoughAnnotationConfig;
   }
 }
