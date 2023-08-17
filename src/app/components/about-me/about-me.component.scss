@@ -20,6 +20,7 @@ em {
   gap: $m-16;
   h2 {
     font-size: $heading-font-size;
+    max-width: fit-content;
   }
   p {
     font-weight: 500;
@@ -45,7 +46,7 @@ em {
     .highlighted-text,
     a {
       font-style: normal;
-      color: $yellow-color;
+      color: $yellow-color-txt;
     }
   }
   ul {
@@ -93,7 +94,7 @@ table {
     color: $dark-color;
     transition: all 0.2s ease-in-out;
     &:hover {
-      color: $yellow-color;
+      color: $yellow-color-txt;
     }
   }
 }

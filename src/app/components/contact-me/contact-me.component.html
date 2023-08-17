@@ -24,7 +24,9 @@
           type="text"
           placeholder="Your Name"
           name="name"
+          name="name"
           required
+          autocomplete="username"
           #name
           (blur)="checkIfNameEmpty()"
           [ngClass]="{
@@ -66,6 +68,8 @@
         <input
           type="email"
           placeholder="Your E-Mail"
+          autocomplete="email"
+          name="eMail"
           #eMail
           required
           (blur)="checkIfEmailEmpty()"
