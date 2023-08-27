@@ -1,6 +1,14 @@
 <header #header>
   <a routerLink="/">
-    <h2 class="logo">N<strong>S</strong></h2>
+    <h2 class="logo">
+      N<strong
+        [ngClass]="{
+        'color-change': colorChange,
+        'same-color': !colorChange,
+      }"
+        >S</strong
+      >
+    </h2>
   </a>
   <nav #navLinks>
     <ul class="nav-links-list">

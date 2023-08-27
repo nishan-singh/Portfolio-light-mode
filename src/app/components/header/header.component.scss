@@ -48,8 +48,11 @@ header {
   color: $white-color;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
-  strong {
+  .color-change {
     animation: addedColor 0ms linear 1.8s forwards;
+  }
+  .same-color {
+    color: $blue-color;
   }
   &:hover,
   &:focus {

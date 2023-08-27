@@ -1,4 +1,5 @@
 import { Component, HostListener, ViewChild } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -10,12 +11,21 @@ export class HeaderComponent {
   @ViewChild('header') header: any;
   @ViewChild('toggleBtn') toggleBtn: any;
   hamburgerAnimation: boolean = false;
+  colorChange: boolean = true;
   scrollPosition: number = 0;
 
-  ngAfterViewInit() {
-    if (window.location.href.includes('imprint')) {
-      this.header.nativeElement.classList.add('header-scrolled');
-    }
+  constructor(private router: Router) {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        if (window.location.href.includes('imprint')) {
+          this.header.nativeElement.classList.add('header-scrolled');
+          this.colorChange = false;
+        } else {
+          this.header.nativeElement.classList.remove('header-scrolled');
+          this.colorChange = true;
+        }
+      }
+    });
   }
 
   toggleNavLinks() {
