@@ -4,9 +4,9 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: $spacing-block $spacing-inline-normal;
+  padding: $spacing-block-footer $spacing-inline-normal;
   color: $dark-color;
-  min-height: 224px;
+  min-height: $footer-height;
   div {
     display: flex;
     flex-direction: column;

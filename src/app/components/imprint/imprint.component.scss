@@ -2,12 +2,12 @@
 
 .imprint-wrapper {
   background-color: #fff5f6;
-  padding: $spacing-block $spacing-inline-normal;
+  padding: $spacing-block-imprint $spacing-inline-normal;
   margin-block-start: $header-height;
   display: flex;
   flex-direction: column;
   gap: $m-32;
-  min-height: calc(100vh - 288px);
+  min-height: calc(100vh - $header-height - $footer-height);
 }
 
 h1 {
