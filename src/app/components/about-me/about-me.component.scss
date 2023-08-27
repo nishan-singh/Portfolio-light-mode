@@ -36,7 +36,7 @@ em {
 .infos {
   flex-basis: 55%;
   p {
-    line-height: 1.8;
+    line-height: $text-line-height;
     color: $main-color;
     margin-block-end: $m-16;
     flex-basis: 85%;

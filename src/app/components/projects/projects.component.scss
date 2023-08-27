@@ -44,7 +44,7 @@ figure {
       margin-block-end: $m-16;
     }
     p {
-      line-height: 1.8;
+      line-height: $text-line-height;
     }
   }
 }
