@@ -19,14 +19,17 @@ export class HeaderComponent {
       if (event instanceof NavigationEnd) {
         if (window.location.href.includes('imprint')) {
           this.header.nativeElement.classList.add('header-scrolled');
-          this.colorChange = false;
-        } else {
+        } else if (
+          this.scrollPosition < 72 &&
+          !window.location.href.includes('imprint')
+        ) {
           this.header.nativeElement.classList.remove('header-scrolled');
-          this.colorChange = true;
         }
       }
     });
   }
+
+  ngAfterViewInit(): void {}
 
   toggleNavLinks() {
     this.navLinks.nativeElement.classList.toggle('show-nav-links');
@@ -41,7 +44,10 @@ export class HeaderComponent {
       document.documentElement.scrollTop ||
       document.body.scrollTop ||
       0;
+    this.changeNavColor();
+  }
 
+  changeNavColor() {
     if (this.scrollPosition > 72 && !window.location.href.includes('imprint')) {
       this.header.nativeElement.classList.add('header-scrolled');
     } else if (
