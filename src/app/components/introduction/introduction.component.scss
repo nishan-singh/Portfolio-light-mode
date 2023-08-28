@@ -1,6 +1,6 @@
 @import "../../../variables.scss";
 
-$opening-transition: 0.75s;
+$opening-transition: 0.8s;
 $transition-delay: 0.75s;
 
 .intro {
@@ -99,7 +99,7 @@ h2 {
 }
 
 .typing-animation {
-  animation: typewriter 0.75s steps(18) $opening-transition forwards;
+  animation: typewriter 1.3s steps(18) $opening-transition forwards;
 }
 
 @keyframes typewriter {
@@ -114,7 +114,7 @@ h2 {
 .fade-in-animation {
   transform: translateY(20px);
   opacity: 0;
-  animation: fadeIn 0.5s ease-in-out 1.25s forwards;
+  animation: fadeIn 0.5s ease-in-out 1.75s forwards;
 }
 
 @keyframes fadeIn {
