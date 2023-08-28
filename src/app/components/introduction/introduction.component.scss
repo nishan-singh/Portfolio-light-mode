@@ -1,7 +1,7 @@
 @import "../../../variables.scss";
 
-$opening-transition: 1.2s;
-$transition-delay: 1s;
+$opening-transition: 0.75s;
+$transition-delay: 0.75s;
 
 .intro {
   background: url("/assets/img/hero-bg.jpg") no-repeat center center fixed;
@@ -20,6 +20,13 @@ $transition-delay: 1s;
   position: relative;
   overflow: hidden;
   isolation: isolate;
+
+  p {
+    margin-block: $m-32;
+  }
+}
+
+.start-animation {
   &::before {
     content: "";
     position: absolute;
@@ -43,9 +50,6 @@ $transition-delay: 1s;
     z-index: 10;
     animation: fadeOutDown $opening-transition ease-in-out $transition-delay
       forwards;
-  }
-  p {
-    margin-block: $m-32;
   }
 }
 
@@ -92,8 +96,10 @@ em {
 h2 {
   overflow: hidden;
   white-space: nowrap;
-  animation: typewriter 1.5s steps(18) $opening-transition forwards;
-  width: 0;
+}
+
+.typing-animation {
+  animation: typewriter 0.75s steps(18) $opening-transition forwards;
 }
 
 @keyframes typewriter {
@@ -105,10 +111,10 @@ h2 {
   }
 }
 
-h3 {
-  opacity: 0;
+.fade-in-animation {
   transform: translateY(20px);
-  animation: fadeIn 0.5s ease-in-out 2.5s forwards;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in-out 1.25s forwards;
 }
 
 @keyframes fadeIn {
