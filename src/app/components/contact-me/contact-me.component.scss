@@ -73,6 +73,7 @@ form {
   display: flex;
   flex-direction: column;
   gap: $m-32;
+  max-width: 550px;
 }
 
 input,
