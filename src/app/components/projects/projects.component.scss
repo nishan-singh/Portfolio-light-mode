@@ -19,7 +19,7 @@
 .projects {
   display: flex;
   flex-direction: column;
-  gap: $m-48;
+  gap: $m-48 * 2;
 }
 
 figure {
@@ -94,7 +94,7 @@ figure {
       width: 50ch;
     }
     img {
-      width: 600px;
+      width: 550px;
     }
   }
 }
