@@ -17,7 +17,7 @@ em {
   flex-basis: 45%;
   display: flex;
   flex-direction: column;
-  gap: $m-16;
+  gap: $m-8;
   h2 {
     font-size: $heading-font-size;
   }
@@ -52,17 +52,15 @@ em {
     display: flex;
     flex-direction: column;
     margin-block: $m-24;
-    gap: $m-16;
     li {
       display: flex;
       align-items: center;
-      gap: $m-16;
       max-width: 65ch;
     }
     svg {
       flex-basis: 15%;
-      width: 48px;
-      height: 48px;
+      width: 36px;
+      height: 36px;
     }
   }
 }
