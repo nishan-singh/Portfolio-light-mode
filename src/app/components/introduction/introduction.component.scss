@@ -10,6 +10,7 @@ $transition-delay: 0.75s;
   -o-background-size: cover;
   background-size: cover;
   min-height: 750px;
+  height: 100vh;
   height: 100dvh;
   width: 100%;
   padding-inline: $spacing-inline-normal;
@@ -195,7 +196,6 @@ aside {
   }
   .intro {
     padding-block: $spacing-block-mobile;
-    height: auto;
     gap: $m-48;
   }
 }
