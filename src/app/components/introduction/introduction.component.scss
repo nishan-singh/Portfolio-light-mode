@@ -4,7 +4,7 @@ $opening-transition: 0.8s;
 $transition-delay: 0.75s;
 
 .intro {
-  background: url("/assets/img/hero-bg.jpg") no-repeat center center fixed;
+  background: url("/assets/img/hero-bg.webp") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -22,13 +22,14 @@ $transition-delay: 0.75s;
   position: relative;
   overflow: hidden;
   isolation: isolate;
-
+  z-index: 4;
   p {
     margin-block: $m-32;
   }
 }
 
 .start-animation {
+  z-index: 9;
   &::before {
     content: "";
     position: absolute;

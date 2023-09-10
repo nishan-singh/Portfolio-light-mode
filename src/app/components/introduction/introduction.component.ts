@@ -20,6 +20,6 @@ export class IntroductionComponent {
         return;
       }
       this.checkAnimationDone = this.dataService.afterAnimationDone();
-    }, 3000);
+    }, 2700);
   }
 }

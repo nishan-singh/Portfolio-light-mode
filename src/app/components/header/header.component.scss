@@ -13,6 +13,16 @@ header {
   justify-content: space-between;
   align-items: center;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  animation: showHeader 350ms 2.22s ease-in-out;
+}
+
+@keyframes showHeader {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .header-scrolled {
@@ -48,24 +58,12 @@ header {
   color: $white-color;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
-  .color-change {
-    animation: addedColor 0ms linear 1.5s forwards;
-  }
-  .same-color {
+  strong {
     color: $blue-color;
   }
   &:hover,
   &:focus {
     color: $yellow-color;
-  }
-}
-
-@keyframes addedColor {
-  from {
-    color: $white-color;
-  }
-  to {
-    color: $blue-color;
   }
 }
 
