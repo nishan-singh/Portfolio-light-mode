@@ -12,7 +12,13 @@ import { ContactMeComponent } from './components/contact-me/contact-me.component
 import { FooterComponent } from './components/footer/footer.component';
 import { ImprintComponent } from './components/imprint/imprint.component';
 import { FormsModule } from '@angular/forms';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +31,21 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     ImprintComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      defaultLanguage: 'en',
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient],
+      },
+      isolate: true,
+    }),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
