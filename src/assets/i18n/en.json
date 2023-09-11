@@ -1,0 +1,114 @@
+{
+  "header": {
+    "about": "About me",
+    "skills": "Skills",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "intro": {
+    "name": "Hi, I'm Nishan",
+    "work-field": "Frontend Developer",
+    "location": "Based in Leipzig",
+    "contact-me": "Let's talk"
+  },
+  "about-me": {
+    "sub-title": "- NICE TO MEET YOU!",
+    "title": "Nishan Singh",
+    "job-title": "Frontend Developer",
+    "contact-me": "Got a project? ",
+    "infos": {
+      "intro-first-half": "Hello there! My Name is",
+      "intro-highlighted": "Nishan Singh.",
+      "intro-second-half": "I am a Frontend Developer based in Leipzig, Germany."
+    },
+    "desc": {
+      "first-half": "I have a good understanding of ",
+      "highlighted-1": "JavaScript and Angular.",
+      "second-half": "Throughout my training at  ",
+      "link": "Developer Akademie, ",
+      "third-half": "I have learned ",
+      "highlighted-2": "clean Coding ",
+      "and": "and",
+      "highlighted-3": "best practices ",
+      "fourth-half": "for better performance and maintainability."
+    },
+    "desc-bullet-point-1": {
+      "first-half": "Additionally, I have developed the skills of ",
+      "highlighted-1": "logical thinking ",
+      "and": "and",
+      "highlighted-2": " problem-solving",
+      "second-half": "to deliver the best possible user experience."
+    },
+    "desc-bullet-point-2": {
+      "first-half": "As a Front End Developer, I focus on the user experience and the user interface.",
+      "second-half": "I am passionate about creating ",
+      "highlighted-1": "beautiful, ",
+      "highlighted-2": "responsive, ",
+      "and": "and",
+      "highlighted-3": "accessible ",
+      "third-half": "websites and applications."
+    },
+    "additional-infos": {
+      "age": "age",
+      "phone": "phone",
+      "email": "E-Mail"
+    }
+  },
+  "skills": {
+    "sub-title": "- SKILLS",
+    "title": "My Skills",
+    "desc": "I have gained experience in building projects with various front-end technologies and concepts.",
+    "contact-me": "Get in touch",
+    "skills-list": {
+      "angular": "Angular",
+      "typescript": "TypeScript",
+      "javascript": "JavaScript",
+      "html": "HTML",
+      "css": "CSS",
+      "scss": "SCSS",
+      "rest-api": "REST API",
+      "git": "Git",
+      "material-design-1": "Material",
+      "material-design-2": "Design",
+      "firebase": "Firebase",
+      "scrum": "Scrum"
+    }
+  },
+  "project-sec": {
+    "sub-title": "- PROJECTS",
+    "title": "Recent completed works",
+    "projects": {
+      "project-1": {
+        "title": "Join",
+        "desc": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, and assign users and categories.",
+        "tech": "JavaScript | HTML | CSS"
+      },
+      "project-2": {
+        "title": "Pro Movies",
+        "desc": "Movies App to get information about the latest movies and TV shows. You can search for movies and watch the trailer.",
+        "tech": "Angular | TypeScript | HTML | SCSS | REST API"
+      },
+      "project-3": {
+        "title": "Simple CRM",
+        "desc": "Simple CRM to manage customers and income. You can add, edit, and delete customers. It also represents the income and expenses with a bar chart.",
+        "tech": "Angular | TypeScript | Firebase | HTML | SCSS"
+      },
+      "project-4": {
+        "title": "El Pollo Loco",
+        "desc": "Jump, run, and throw game based on an object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+        "tech": "JavaScript | HTML | CSS"
+      }
+    }
+  },
+  "contact": {
+    "sub-title": "- LET'S CONNECT",
+    "title": "Get in touch",
+    "desc": "Feel free to send me a message at any time to discuss your needs. I am always available and eager to take on new projects. ",
+    "form": {
+      "submit-btn": "Send message :)"
+    }
+  },
+  "footer": {
+    "imprint": "Imprint"
+  }
+}

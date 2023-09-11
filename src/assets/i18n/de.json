@@ -1,0 +1,114 @@
+{
+  "header": {
+    "about": "Über mich",
+    "skills": "Skills",
+    "portfolio": "Portfolio",
+    "contact": "Kontakt"
+  },
+  "intro": {
+    "name": "Hi, ich bin Nishan",
+    "work-field": "Frontend Entwickler",
+    "location": "mit Sitz in Leipzig",
+    "contact-me": "Kontaktiere mich"
+  },
+  "about-me": {
+    "sub-title": "- Schön, dich kennenzulernen!",
+    "title": "Nishan Singh",
+    "job-title": "Frontend Entwickler",
+    "contact-me": "Hast du ein Projekt?",
+    "infos": {
+      "intro-first-half": "Hallo! Mein Name ist",
+      "intro-highlighted": "Nishan Singh.",
+      "intro-second-half": "Ich bin ein Frontend-Entwickler mit Sitz in Leipzig, Deutschland."
+    },
+    "desc": {
+      "first-half": "Ich habe ein gutes Verständnis von ",
+      "highlighted-1": "JavaScript und Angular.",
+      "second-half": "Während meiner Ausbildung bei der ",
+      "link": "Developer Akademie ",
+      "third-half": "habe ich",
+      "highlighted-2": "clean Coding ",
+      "and": "und",
+      "highlighted-3": "best practices ",
+      "fourth-half": "für bessere Performance gelernt."
+    },
+    "desc-bullet-point-1": {
+      "first-half": "Darüber hinaus habe ich die Fähigkeit entwickelt, ",
+      "highlighted-1": "logisch zu denken ",
+      "and": "und",
+      "highlighted-2": "Probleme zu lösen, ",
+      "second-half": "um die bestmögliche Benutzererfahrung zu bieten."
+    },
+    "desc-bullet-point-2": {
+      "first-half": "Als Front-End-Entwickler konzentriere ich mich auf das Benutzererlebnis und die Benutzeroberfläche.",
+      "second-half": "Meine Leidenschaft ist es, ",
+      "highlighted-1": "schöne, ",
+      "highlighted-2": "ansprechende ",
+      "and": "und",
+      "highlighted-3": "zugängliche ",
+      "third-half": "Websites und Anwendungen zu entwickeln."
+    },
+    "additional-infos": {
+      "age": "Alter",
+      "phone": "Telefon",
+      "email": "E-Mail"
+    }
+  },
+  "skills": {
+    "sub-title": "- Fähigkeiten",
+    "title": "Meine Fähigkeiten",
+    "desc": "Ich habe über 20 Projekte mit verschiedenen Technologien entwickelt. Hier sind einige meiner Fähigkeiten.",
+    "contact-me": "Kontaktiere mich",
+    "skills-list": {
+      "angular": "Angular",
+      "typescript": "TypeScript",
+      "javascript": "JavaScript",
+      "html": "HTML",
+      "css": "CSS",
+      "scss": "SCSS",
+      "rest-api": "REST API",
+      "git": "Git",
+      "material-design-1": "Material",
+      "material-design-2": "Design",
+      "firebase": "Firebase",
+      "scrum": "Scrum"
+    }
+  },
+  "project-sec": {
+    "sub-title": "- Meine Projekte",
+    "title": "Meine Projekte",
+    "projects": {
+      "project-1": {
+        "title": "Join",
+        "desc": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben per Drag & Drop, ordnen Sie Benutzer und Kategorien zu.",
+        "tech": "JavaScript | HTML | CSS"
+      },
+      "project-2": {
+        "title": "Pro Movies",
+        "desc": "Movies App, um Informationen über die neuesten Filme und Fernsehsendungen zu erhalten. Sie können nach Filmen suchen und den Trailer ansehen.",
+        "tech": "Angular | TypeScript | HTML | SCSS | REST API"
+      },
+      "project-3": {
+        "title": "Simple CRM",
+        "desc": "Simple CRM zur Verwaltung von Kunden und Einnahmen. Sie können Kunden hinzufügen, bearbeiten und löschen. Es stellt auch die Einnahmen und Ausgaben mit einem Balkendiagramm dar.",
+        "tech": "Angular | TypeScript | Firebase | HTML | SCSS"
+      },
+      "project-4": {
+        "title": "El Pollo Loco",
+        "desc": "Sprung-, Lauf- und Wurfspiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen.",
+        "tech": "JavaScript | HTML | CSS"
+      }
+    }
+  },
+  "contact": {
+    "sub-title": "- Kontaktiere mich",
+    "title": "Kontaktiere mich",
+    "desc": "Hast du ein Projekt? Lass uns reden.",
+    "form": {
+      "submit-btn": "Nachricht senden :)"
+    }
+  },
+  "footer": {
+    "imprint": "Impressum"
+  }
+}
