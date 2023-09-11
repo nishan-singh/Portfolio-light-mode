@@ -1,5 +1,6 @@
 import { Component, HostListener, ViewChild } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -13,8 +14,10 @@ export class HeaderComponent {
   hamburgerAnimation: boolean = false;
   colorChange: boolean = true;
   scrollPosition: number = 0;
+  germanLang: boolean = true;
+  englishFlag: boolean = false;
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private translate: TranslateService) {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         if (window.location.href.includes('imprint')) {
@@ -56,5 +59,11 @@ export class HeaderComponent {
     ) {
       this.header.nativeElement.classList.remove('header-scrolled');
     }
+  }
+
+  toggleLanguage() {
+    this.translate.use(this.germanLang ? 'de' : 'en');
+    this.germanLang = !this.germanLang;
+    this.englishFlag = !this.englishFlag;
   }
 }
