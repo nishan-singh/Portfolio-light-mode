@@ -19,7 +19,7 @@
     "infos": {
       "intro-first-half": "Hallo! Mein Name ist",
       "intro-highlighted": "Nishan Singh.",
-      "intro-second-half": "Ich bin ein Frontend-Entwickler mit Sitz in Leipzig, Deutschland."
+      "intro-second-half": "Ich bin ein Frontend Entwickler mit Sitz in Leipzig, Deutschland."
     },
     "desc": {
       "first-half": "Ich habe ein gutes Verständnis von ",
@@ -80,7 +80,7 @@
     "projects": {
       "project-1": {
         "title": "Join",
-        "desc": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben per Drag & Drop, ordnen Sie Benutzer und Kategorien zu.",
+        "desc": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben per Drag-and-Drop, ordnen Sie Benutzer und Kategorien zu.",
         "tech": "JavaScript | HTML | CSS"
       },
       "project-2": {
