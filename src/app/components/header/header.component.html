@@ -10,8 +10,9 @@
           fragment="about-me"
           class="each-nav-link"
           (click)="toggleNavLinks()"
-          >About me</a
         >
+          {{ "header.about" | translate }}
+        </a>
       </li>
       <li>
         <a
@@ -19,8 +20,9 @@
           fragment="skills"
           class="each-nav-link"
           (click)="toggleNavLinks()"
-          >Skills</a
         >
+          {{ "header.skills" | translate }}
+        </a>
       </li>
       <li>
         <a
@@ -28,8 +30,9 @@
           fragment="portfolio"
           class="each-nav-link"
           (click)="toggleNavLinks()"
-          >Portfolio</a
         >
+          {{ "header.portfolio" | translate }}
+        </a>
       </li>
       <li>
         <a
@@ -37,8 +40,24 @@
           fragment="contact"
           class="each-nav-link"
           (click)="toggleNavLinks()"
-          >Contact</a
         >
+          {{ "header.contact" | translate }}
+        </a>
+      </li>
+      <li class="lang-btn">
+        <button
+          aria-label="Change Language (English/German)"
+          (click)="toggleLanguage()"
+        >
+          <img
+            [src]="
+              germanLang
+                ? '/assets/img/icons/de-flag.svg'
+                : '/assets/img/icons/en-flag.svg'
+            "
+            alt=""
+          />
+        </button>
       </li>
     </ul>
     <section class="external-links">

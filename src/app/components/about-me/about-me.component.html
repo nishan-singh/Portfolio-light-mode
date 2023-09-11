@@ -1,24 +1,41 @@
 <article class="about-me" id="about-me">
   <section class="personal-infos">
-    <p>- NICE TO MEET YOU!</p>
-    <h2 translate="no" id="about-me-hd-underline">Nishan Singh</h2>
-    <h3 translate="no">Frontend Developer</h3>
-    <a routerLink="/" fragment="contact" class="default-btn">Got a project?</a>
+    <p>
+      {{ "about-me.sub-title" | translate }}
+    </p>
+    <h2 id="about-me-hd-underline">
+      {{ "about-me.title" | translate }}
+    </h2>
+    <h3>
+      {{ "about-me.job-title" | translate }}
+    </h3>
+    <a routerLink="/" fragment="contact" class="default-btn">
+      {{ "about-me.contact-me" | translate }}
+    </a>
   </section>
   <section class="infos">
     <p>
-      Hello there! My Name is <em class="highlighted-text">Nishan Singh</em>. I
-      am a Frontend Developer based in Leipzig, Germany.
+      {{ "about-me.infos.intro-first-half" | translate }}
+      <em class="highlighted-text">
+        {{ "about-me.infos.intro-highlighted" | translate }} </em
+      >{{ "about-me.infos.intro-second-half" | translate }}
     </p>
     <p>
-      I have a good understanding of
-      <em id="highlight1">JavaScript and Angular</em>. I have learned
-      <span id="highlight2">clean coding</span> and
-      <span id="highlight3">optimal solutions</span> for better performance
-      throughout my training at
-      <a href="https://developerakademie.com/" target="_blank"
-        >Developer Akademie</a
-      >.
+      {{ "about-me.desc.first-half" | translate }}
+      <em id="highlight1"> {{ "about-me.desc.highlighted-1" | translate }} </em
+      >{{ "about-me.desc.second-half" | translate }}
+      <a href="https://developerakademie.com/" target="_blank">
+        {{ "about-me.desc.link" | translate }}
+      </a>
+      {{ "about-me.desc.third-half" | translate }}
+      <span id="highlight2">
+        {{ "about-me.desc.highlighted-2" | translate }}
+      </span>
+      {{ "about-me.desc.and" | translate }}
+      <span id="highlight3">
+        {{ "about-me.desc.highlighted-3" | translate }}
+      </span>
+      {{ "about-me.desc.fourth-half" | translate }}
     </p>
     <ul>
       <li>
@@ -30,10 +47,15 @@
           />
         </svg>
         <p>
-          Additionally, I have developed the skills of
-          <em id="highlight4">logical thinking</em>
-          and <em id="highlight5">problem-solving</em>
-          to deliver the best possible user experience.
+          {{ "about-me.desc-bullet-point-1.first-half" | translate }}
+          <em id="highlight4">
+            {{ "about-me.desc-bullet-point-1.highlighted-1" | translate }}
+          </em>
+          {{ "about-me.desc-bullet-point-1.and" | translate }}
+          <em id="highlight5">
+            {{ "about-me.desc-bullet-point-1.highlighted-2" | translate }}
+          </em>
+          {{ "about-me.desc-bullet-point-1.second-half" | translate }}
         </p>
       </li>
       <li>
@@ -44,26 +66,39 @@
           />
         </svg>
         <p>
-          As a Front End Developer, I focus on the user experience and the user
-          interface. I am passionate about creating
-          <em id="highlight6">beautiful</em>,
-          <em id="highlight7">responsive</em>, and
-          <em id="highlight8">accessible</em>
-          websites and applications.
+          {{ "about-me.desc-bullet-point-2.first-half" | translate }}
+          {{ "about-me.desc-bullet-point-2.second-half" | translate }}
+          <em id="highlight6">
+            {{ "about-me.desc-bullet-point-2.highlighted-1" | translate }}
+          </em>
+          <em id="highlight7">
+            {{ "about-me.desc-bullet-point-2.highlighted-2" | translate }}
+          </em>
+          {{ "about-me.desc-bullet-point-2.and" | translate }}
+          <em id="highlight8">
+            {{ "about-me.desc-bullet-point-2.highlighted-3" | translate }}
+          </em>
+          {{ "about-me.desc-bullet-point-2.third-half" | translate }}
         </p>
       </li>
     </ul>
     <table>
       <tr>
-        <td>Age</td>
+        <td>
+          {{ "about-me.additional-infos.age" | translate }}
+        </td>
         <td>22</td>
       </tr>
       <tr>
-        <td>Phone</td>
+        <td>
+          {{ "about-me.additional-infos.phone" | translate }}
+        </td>
         <td><a href="tel:+49 178 2977050">+49 178 2977050</a></td>
       </tr>
       <tr>
-        <td>Email</td>
+        <td>
+          {{ "about-me.additional-infos.email" | translate }}
+        </td>
         <td>
           <a href="mailto:singh007nishan@gmail.com">contact@nishan-singh.com</a>
         </td>

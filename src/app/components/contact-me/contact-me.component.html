@@ -1,12 +1,15 @@
 <section class="contact-wrapper">
   <section class="info-about-me">
-    <p>- LET'S CONNECT</p>
+    <p>
+      {{ "contact.sub-title" | translate }}
+    </p>
     <h2>
-      <span id="contact-hd-underline"> Get in touch </span>
+      <span id="contact-hd-underline">
+        {{ "contact.title" | translate }}
+      </span>
     </h2>
     <p>
-      I'm currently available to take on new projects, so feel free to send me a
-      message about anything that you want to run past me.
+      {{ "contact.desc" | translate }}
     </p>
     <div class="contact-infos">
       <a href="tel:+49 178 29 77 050"> +49 178 2977050 </a>
@@ -157,7 +160,7 @@
         </span>
       </p>
       <button type="submit" class="default-btn" #submitBtn>
-        Send message :)
+        {{ "contact.form.submit-btn" | translate }}
       </button>
       <p *ngIf="isMailSent" class="mail-sent" #mailSent>
         <svg

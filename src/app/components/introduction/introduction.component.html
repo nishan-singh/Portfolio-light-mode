@@ -7,23 +7,24 @@
   }"
 >
   <div class="intro-text" style="font-weight: 800">
-    <h1>Hi, I'm <em>Nishan!</em></h1>
+    <h1>{{ "intro.name" | translate }}</h1>
     <h2
-      translate="no"
       [ngClass]="{
         'typing-animation': !checkAnimationDone
       }"
     >
-      Frontend Developer
+      {{ "intro.work-field" | translate }}
     </h2>
     <h3
       [ngClass]="{
         'fade-in-animation': !checkAnimationDone
       }"
     >
-      Based in Leipzig
+      {{ "intro.location" | translate }}
     </h3>
-    <a routerLink="/" fragment="contact" class="default-btn">Let's talk</a>
+    <a routerLink="/" fragment="contact" class="default-btn">
+      {{ "intro.contact-me" | translate }}
+    </a>
     <aside role="complementary">
       <a href="tel:+49 178 29 77 050"> +49 178 2977050 </a>
       <a href="mailto:contact@nishan-singh.com">contact@nishan-singh.com</a>
