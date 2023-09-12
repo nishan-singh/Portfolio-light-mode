@@ -48,7 +48,7 @@ export class AboutMeComponent {
   }
 
   clearMarks() {
-    document.querySelectorAll('.rough-annotation').forEach((e) => {
+    document.querySelectorAll('.infos .rough-annotation').forEach((e) => {
       e.remove();
     });
   }
