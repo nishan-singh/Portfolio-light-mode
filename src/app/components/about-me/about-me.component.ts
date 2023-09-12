@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { annotate, annotationGroup } from 'rough-notation';
 import { RoughAnnotationConfig } from 'rough-notation/lib/model';
 
@@ -10,6 +11,13 @@ import { RoughAnnotationConfig } from 'rough-notation/lib/model';
 export class AboutMeComponent {
   textAnnotation: any;
   headingAnnotation: any;
+
+  constructor(translate: TranslateService) {
+    translate.onLangChange.subscribe(() => {
+      this.clearMarks();
+      this.markText();
+    });
+  }
 
   ngOnInit(): void {
     this.markText();
@@ -37,6 +45,12 @@ export class AboutMeComponent {
       markElem8,
     ]);
     this.textAnnotation.show();
+  }
+
+  clearMarks() {
+    document.querySelectorAll('.rough-annotation').forEach((e) => {
+      e.remove();
+    });
   }
 
   underlineHeading() {
