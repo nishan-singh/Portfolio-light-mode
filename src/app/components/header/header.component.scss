@@ -76,8 +76,8 @@ header {
 .each-nav-link,
 .lang-btn button,
 span {
-  color: $white-color;
   border-bottom: 2px solid transparent;
+  color: $white-color;
 }
 .each-nav-link {
   transition: color 125ms ease-in-out;
@@ -172,7 +172,9 @@ span {
   header {
     padding-inline: $spacing-inline-mobile;
   }
-  .each-nav-link {
+  .each-nav-link,
+  .lang-btn button,
+  span {
     color: $dark-color;
   }
   nav {
