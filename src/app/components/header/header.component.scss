@@ -30,17 +30,12 @@ header {
   backdrop-filter: blur(8px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   .each-nav-link,
-  .logo {
+  .logo,
+  .lang-btn button,
+  span {
     color: $dark-color;
   }
-  .each-nav-link {
-    transition: color 125ms ease-in-out;
-    border-bottom: 2px solid transparent;
-    &:hover,
-    &:focus {
-      border-color: $yellow-color;
-    }
-  }
+
   .toggle-btn {
     svg {
       fill: $dark-color;
@@ -50,6 +45,10 @@ header {
 
 .active-link {
   border-color: $yellow-color;
+}
+
+.active {
+  border-color: $yellow-color !important;
 }
 
 .logo {
@@ -74,8 +73,29 @@ header {
     margin-inline-start: $m-32;
   }
 }
-.each-nav-link {
+.each-nav-link,
+.lang-btn button,
+span {
   color: $white-color;
+  border-bottom: 2px solid transparent;
+}
+.each-nav-link {
+  transition: color 125ms ease-in-out;
+  &:hover,
+  &:focus {
+    border-color: $yellow-color;
+  }
+}
+
+.each-nav-link {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.lang-btn button,
+span {
+  font-size: 1rem;
+  font-weight: normal;
 }
 
 .toggle-btn {
@@ -116,11 +136,6 @@ header {
   svg {
     fill: $dark-color;
   }
-}
-
-.each-nav-link {
-  font-weight: 600;
-  font-size: 1.2rem;
 }
 
 .external-links {

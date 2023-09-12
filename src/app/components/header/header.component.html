@@ -47,16 +47,17 @@
       <li class="lang-btn">
         <button
           aria-label="Change Language (English/German)"
-          (click)="toggleLanguage()"
+          (click)="toggleLanguage('de')"
+          [ngClass]="{ active: language === 'de' }"
         >
-          <img
-            [src]="
-              germanLang
-                ? '/assets/img/icons/de-flag.svg'
-                : '/assets/img/icons/en-flag.svg'
-            "
-            alt=""
-          />
+          de
+        </button>
+        <span> | </span>
+        <button
+          (click)="toggleLanguage('en')"
+          [ngClass]="{ active: language === 'en' }"
+        >
+          en
         </button>
       </li>
     </ul>

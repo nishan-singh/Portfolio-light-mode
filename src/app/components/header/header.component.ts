@@ -14,8 +14,7 @@ export class HeaderComponent {
   hamburgerAnimation: boolean = false;
   colorChange: boolean = true;
   scrollPosition: number = 0;
-  germanLang: boolean = true;
-  englishFlag: boolean = false;
+  language: string = 'en';
 
   constructor(private router: Router, private translate: TranslateService) {
     this.router.events.subscribe((event) => {
@@ -61,9 +60,8 @@ export class HeaderComponent {
     }
   }
 
-  toggleLanguage() {
-    this.translate.use(this.germanLang ? 'de' : 'en');
-    this.germanLang = !this.germanLang;
-    this.englishFlag = !this.englishFlag;
+  toggleLanguage(lang: string) {
+    this.translate.use(lang);
+    this.language = lang;
   }
 }
