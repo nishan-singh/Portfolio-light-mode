@@ -203,11 +203,8 @@ span {
     visibility: visible;
   }
   .external-links {
-    display: block;
-    ul {
-      display: flex;
-      flex-direction: row;
-      gap: $m-16;
-    }
+    display: flex;
+    flex-direction: row;
+    gap: $m-16;
   }
 }

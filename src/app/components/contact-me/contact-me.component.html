@@ -1,5 +1,5 @@
-<section class="contact-wrapper">
-  <section class="info-about-me">
+<section class="contact-wrapper" aria-label="contact section">
+  <section class="info-about-me" aria-label="contact section text">
     <p>
       {{ "contact.sub-title" | translate }}
     </p>
@@ -16,13 +16,14 @@
       <a href="mailto:contact@nishan-singh.com">contact@nishan-singh.com</a>
     </div>
   </section>
-  <section class="contact-form">
+  <section class="contact-form" aria-label="contact form section">
     <form
       (ngSubmit)="
         sendMail(); name.value = ''; eMail.value = ''; message.value = ''
       "
       #contactForm="ngForm"
       ngNativeValidate
+      role="form"
     >
       <p>
         <input
