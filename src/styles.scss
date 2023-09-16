@@ -83,6 +83,9 @@ a {
     background-color: $white-color;
     color: $dark-color;
   }
+  &:active {
+    transform: scale(0.9);
+  }
 }
 
 // q: custom scrollbar
