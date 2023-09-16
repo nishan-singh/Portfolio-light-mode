@@ -14,7 +14,7 @@ export class HeaderComponent {
   hamburgerAnimation: boolean = false;
   colorChange: boolean = true;
   scrollPosition: number = 0;
-  language: string = 'en';
+  language: string = 'de';
 
   constructor(private router: Router, private translate: TranslateService) {
     this.router.events.subscribe((event) => {
