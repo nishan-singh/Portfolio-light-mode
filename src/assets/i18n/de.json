@@ -21,34 +21,13 @@
       "intro-second-half": "Ich bin ein Frontend Entwickler."
     },
     "desc": {
-      "first-half": "Ich habe ein gutes Verständnis von ",
-      "highlighted-1": "JavaScript und Angular.",
-      "second-half": "Während meiner Ausbildung bei der ",
+      "first-half": "Ich habe ein gutes Verständnis von JavaScript und Angular. Während meiner Ausbildung bei der ",
       "link": "Developer Akademie ",
-      "third-half": "habe ich",
-      "highlighted-2": "clean Coding ",
-      "and": "und",
-      "highlighted-3": "best practices ",
-      "fourth-half": "für bessere Performance gelernt."
+      "second-half": "habe ich clean Coding und best practices für bessere Performance gelernt."
     },
-    "desc-bullet-point-1": {
-      "first-half": "Darüber hinaus habe ich die Fähigkeit entwickelt, ",
-      "highlighted-1": "logisch zu denken ",
-      "and": "und",
-      "highlighted-2": "Probleme zu lösen, ",
-      "second-half": "um die bestmögliche Benutzererfahrung zu bieten."
-    },
-    "desc-bullet-point-2": {
-      "first-half": "Als Front-End-Entwickler konzentriere ich mich auf das Benutzererlebnis und die Benutzeroberfläche.",
-      "second-half": "Meine Leidenschaft ist es, ",
-      "highlighted-1": "schöne, ",
-      "highlighted-2": "ansprechende ",
-      "and": "und",
-      "highlighted-3": "zugängliche ",
-      "third-half": "Websites und Anwendungen zu entwickeln."
-    },
+    "desc-bullet-point-1": "Darüber hinaus habe ich die Fähigkeit entwickelt, logisch zu denken und Probleme zu lösen, um die bestmögliche Benutzererfahrung zu bieten.",
+    "desc-bullet-point-2": "Als Front-End-Entwickler konzentriere ich mich auf das Benutzererlebnis und die Benutzeroberfläche. Meine Leidenschaft ist es, schöne, ansprechende und zugängliche Websites und Anwendungen zu entwickeln.",
     "additional-infos": {
-      "age": "Alter",
       "phone": "Telefon",
       "email": "E-Mail"
     }

@@ -21,34 +21,13 @@
       "intro-second-half": "I am a Frontend Developer."
     },
     "desc": {
-      "first-half": "I have a good understanding of ",
-      "highlighted-1": "JavaScript and Angular.",
-      "second-half": "Throughout my training at  ",
-      "link": "Developer Akademie, ",
-      "third-half": "I have learned ",
-      "highlighted-2": "clean Coding ",
-      "and": "and",
-      "highlighted-3": "best practices ",
-      "fourth-half": "for better performance and maintainability."
+      "first-half": "I have a good understanding of JavaScript and Angular. Throughout my training at ",
+      "link": "Developer Akademie,",
+      "second-half": " I have learned clean Coding and best practices for better performance and maintainability."
     },
-    "desc-bullet-point-1": {
-      "first-half": "Additionally, I have developed the skills of ",
-      "highlighted-1": "logical thinking ",
-      "and": "and",
-      "highlighted-2": " problem-solving",
-      "second-half": "to deliver the best possible user experience."
-    },
-    "desc-bullet-point-2": {
-      "first-half": "As a Front End Developer, I focus on the user experience and the user interface.",
-      "second-half": "I am passionate about creating ",
-      "highlighted-1": "beautiful, ",
-      "highlighted-2": "responsive, ",
-      "and": "and",
-      "highlighted-3": "accessible ",
-      "third-half": "websites and applications."
-    },
+    "desc-bullet-point-1": "Additionally, I have developed the skills of logical thinking and problem-solving to deliver the best possible user experience.",
+    "desc-bullet-point-2": "As a Front End Developer, I focus on the user experience and the user interface. I am passionate about creating beautiful, responsive, and accessible websites and applications.",
     "additional-infos": {
-      "age": "age",
       "phone": "phone",
       "email": "E-Mail"
     }
