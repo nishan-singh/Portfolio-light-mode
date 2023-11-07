@@ -8,7 +8,6 @@
   "intro": {
     "name": "Hi, ich bin Nishan",
     "work-field": "Frontend Entwickler",
-    "location": "mit Sitz in Leipzig",
     "contact-me": "Kontaktiere mich"
   },
   "about-me": {
@@ -19,7 +18,7 @@
     "infos": {
       "intro-first-half": "Hallo! Mein Name ist",
       "intro-highlighted": "Nishan Singh.",
-      "intro-second-half": "Ich bin ein Frontend Entwickler mit Sitz in Leipzig, Deutschland."
+      "intro-second-half": "Ich bin ein Frontend Entwickler."
     },
     "desc": {
       "first-half": "Ich habe ein gutes Verständnis von ",
