@@ -17,6 +17,10 @@ export class ContactMeComponent {
   isMessageEmpty = false;
   isMailSent = false;
 
+  ngOnInit(): void {
+    this.underlineHeading();
+  }
+
   async sendMail() {
     let formDataToSend = new FormData();
     formDataToSend.append('name', this.name.nativeElement.value);
@@ -53,5 +57,17 @@ export class ContactMeComponent {
 
   checkIfMessageEmpty() {
     this.isMessageEmpty = this.message.nativeElement.value.length <= 25;
+  }
+
+  underlineHeading() {
+    let underlineHeading = annotate(
+      document.querySelector('#contact-hd-underline') as HTMLElement,
+      {
+        type: 'underline',
+        color: '#A8DF8E',
+        strokeWidth: 3,
+      }
+    );
+    underlineHeading.show();
   }
 }

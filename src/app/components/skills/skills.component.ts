@@ -6,4 +6,20 @@ import { annotate } from 'rough-notation';
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.scss'],
 })
-export class SkillsComponent {}
+export class SkillsComponent {
+  ngOnInit(): void {
+    this.underlineHeading();
+  }
+
+  underlineHeading() {
+    let underlineHeadingElm = annotate(
+      document.querySelector('#skill-hd-underline') as HTMLElement,
+      {
+        type: 'underline',
+        color: '#279EFF',
+        strokeWidth: 3,
+      }
+    );
+    underlineHeadingElm.show();
+  }
+}
