@@ -22,6 +22,8 @@
     </p>
     <p>
       {{ "about-me.desc.first-half" | translate }}
+      <em id="highlight1"> {{ "about-me.desc.highlighted-1" | translate }} </em
+      >{{ "about-me.desc.second-half" | translate }}
       <a
         href="https://developerakademie.com/"
         target="_blank"
@@ -29,7 +31,15 @@
       >
         {{ "about-me.desc.link" | translate }}
       </a>
-      {{ "about-me.desc.second-half" | translate }}
+      {{ "about-me.desc.third-half" | translate }}
+      <span id="highlight2">
+        {{ "about-me.desc.highlighted-2" | translate }}
+      </span>
+      {{ "about-me.desc.and" | translate }}
+      <span id="highlight3">
+        {{ "about-me.desc.highlighted-3" | translate }}
+      </span>
+      {{ "about-me.desc.fourth-half" | translate }}
     </p>
     <ul>
       <li>
@@ -41,7 +51,15 @@
           />
         </svg>
         <p>
-          {{ "about-me.desc-bullet-point-1" | translate }}
+          {{ "about-me.desc-bullet-point-1.first-half" | translate }}
+          <em id="highlight4">
+            {{ "about-me.desc-bullet-point-1.highlighted-1" | translate }}
+          </em>
+          {{ "about-me.desc-bullet-point-1.and" | translate }}
+          <em id="highlight5">
+            {{ "about-me.desc-bullet-point-1.highlighted-2" | translate }}
+          </em>
+          {{ "about-me.desc-bullet-point-1.second-half" | translate }}
         </p>
       </li>
       <li>
@@ -52,11 +70,29 @@
           />
         </svg>
         <p>
-          {{ "about-me.desc-bullet-point-2" | translate }}
+          {{ "about-me.desc-bullet-point-2.first-half" | translate }}
+          {{ "about-me.desc-bullet-point-2.second-half" | translate }}
+          <em id="highlight6">
+            {{ "about-me.desc-bullet-point-2.highlighted-1" | translate }}
+          </em>
+          <em id="highlight7">
+            {{ "about-me.desc-bullet-point-2.highlighted-2" | translate }}
+          </em>
+          {{ "about-me.desc-bullet-point-2.and" | translate }}
+          <em id="highlight8">
+            {{ "about-me.desc-bullet-point-2.highlighted-3" | translate }}
+          </em>
+          {{ "about-me.desc-bullet-point-2.third-half" | translate }}
         </p>
       </li>
     </ul>
     <table>
+      <tr>
+        <td>
+          {{ "about-me.additional-infos.age" | translate }}
+        </td>
+        <td>22</td>
+      </tr>
       <tr>
         <td>
           {{ "about-me.additional-infos.phone" | translate }}
