@@ -4,21 +4,19 @@ import { RoughAnnotationConfig } from 'rough-notation/lib/model';
 
 @Component({
   selector: 'app-about-me',
+  standalone: true,
   templateUrl: './about-me.component.html',
   styleUrls: ['./about-me.component.scss'],
 })
 export class AboutMeComponent {
-  textAnnotation: any;
-  headingAnnotation: any;
-
-  ngOnInit(): void {
+  constructor() {
     this.underlineHeading();
   }
 
   underlineHeading() {
     let underlineHeading = annotate(
       document.querySelector('#about-me-hd-underline') as HTMLElement,
-      this.underlineSetting('#75C2F6')
+      this.underlineSetting('#75C2F6'),
     );
     underlineHeading.show();
   }
