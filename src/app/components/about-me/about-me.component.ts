@@ -4,12 +4,11 @@ import { RoughAnnotationConfig } from 'rough-notation/lib/model';
 
 @Component({
   selector: 'app-about-me',
-  standalone: true,
   templateUrl: './about-me.component.html',
   styleUrls: ['./about-me.component.scss'],
 })
 export class AboutMeComponent {
-  constructor() {
+  ngOnInit(): void {
     this.underlineHeading();
   }
 
