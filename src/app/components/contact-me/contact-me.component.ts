@@ -11,6 +11,7 @@ export class ContactMeComponent {
   @ViewChild('eMail') eMail!: ElementRef<HTMLInputElement>;
   @ViewChild('message') message!: ElementRef<HTMLTextAreaElement>;
   @ViewChild('mailSent') mailSent!: ElementRef<HTMLElement>;
+  @ViewChild('submitBtn') submitBtn!: ElementRef<HTMLButtonElement>;
   isNameEmpty = false;
   isEmailEmpty = false;
   isMessageEmpty = false;
@@ -22,6 +23,7 @@ export class ContactMeComponent {
 
   async sendMail() {
     let formDataToSend = new FormData();
+    this.submitBtn.nativeElement.disabled = true;
     formDataToSend.append('name', this.name.nativeElement.value);
     formDataToSend.append('message', this.message.nativeElement.value);
 
@@ -32,6 +34,7 @@ export class ContactMeComponent {
 
     this.isMailSent = true;
     this.togglePopUp();
+    this.submitBtn.nativeElement.disabled = false;
   }
 
   togglePopUp() {
