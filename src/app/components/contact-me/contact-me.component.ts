@@ -7,11 +7,10 @@ import { annotate } from 'rough-notation';
   styleUrls: ['./contact-me.component.scss'],
 })
 export class ContactMeComponent {
-  @ViewChild('contactForm') contactForm?: ElementRef<HTMLFormElement>;
-  @ViewChild('name') name?: ElementRef<HTMLInputElement>;
-  @ViewChild('eMail') eMail?: ElementRef<HTMLInputElement>;
-  @ViewChild('message') message?: ElementRef<HTMLTextAreaElement>;
-  @ViewChild('mailSent') mailSent: any;
+  @ViewChild('name') name!: ElementRef<HTMLInputElement>;
+  @ViewChild('eMail') eMail!: ElementRef<HTMLInputElement>;
+  @ViewChild('message') message!: ElementRef<HTMLTextAreaElement>;
+  @ViewChild('mailSent') mailSent!: ElementRef<HTMLElement>;
   isNameEmpty = false;
   isEmailEmpty = false;
   isMessageEmpty = false;
@@ -23,8 +22,8 @@ export class ContactMeComponent {
 
   async sendMail() {
     let formDataToSend = new FormData();
-    formDataToSend.append('name', this.name!.nativeElement.value);
-    formDataToSend.append('message', this.message!.nativeElement.value);
+    formDataToSend.append('name', this.name.nativeElement.value);
+    formDataToSend.append('message', this.message.nativeElement.value);
 
     await fetch('https://nishan-singh.com/send_mail/send_mail.php', {
       method: 'POST',
