@@ -1,4 +1,4 @@
-import { Component, HostListener, ViewChild } from '@angular/core';
+import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 
@@ -8,13 +8,13 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  @ViewChild('navLinks') navLinks: any;
-  @ViewChild('header') header: any;
-  @ViewChild('toggleBtn') toggleBtn: any;
-  hamburgerAnimation: boolean = false;
-  colorChange: boolean = true;
-  scrollPosition: number = 0;
-  language: string = 'de';
+  @ViewChild('navLinks') navLinks!: ElementRef<HTMLAnchorElement>;
+  @ViewChild('header') header!: ElementRef<HTMLElement>;
+  @ViewChild('toggleBtn') toggleBtn!: ElementRef<HTMLButtonElement>;
+  hamburgerAnimation = false;
+  colorChange = true;
+  scrollPosition = 0;
+  language = 'de';
 
   constructor(private router: Router, private translate: TranslateService) {
     this.router.events.subscribe((event) => {
@@ -30,8 +30,6 @@ export class HeaderComponent {
       }
     });
   }
-
-  ngAfterViewInit(): void {}
 
   toggleNavLinks() {
     this.navLinks.nativeElement.classList.toggle('show-nav-links');
