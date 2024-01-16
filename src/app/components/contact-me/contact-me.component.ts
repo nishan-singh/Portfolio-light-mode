@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { annotate } from 'rough-notation';
 
 @Component({
@@ -7,10 +7,10 @@ import { annotate } from 'rough-notation';
   styleUrls: ['./contact-me.component.scss'],
 })
 export class ContactMeComponent {
-  @ViewChild('contactForm') contactForm: any;
-  @ViewChild('name') name: any;
-  @ViewChild('eMail') eMail: any;
-  @ViewChild('message') message: any;
+  @ViewChild('contactForm') contactForm?: ElementRef<HTMLFormElement>;
+  @ViewChild('name') name?: ElementRef<HTMLInputElement>;
+  @ViewChild('eMail') eMail?: ElementRef<HTMLInputElement>;
+  @ViewChild('message') message?: ElementRef<HTMLTextAreaElement>;
   @ViewChild('mailSent') mailSent: any;
   isNameEmpty = false;
   isEmailEmpty = false;
@@ -23,8 +23,8 @@ export class ContactMeComponent {
 
   async sendMail() {
     let formDataToSend = new FormData();
-    formDataToSend.append('name', this.name.nativeElement.value);
-    formDataToSend.append('message', this.message.nativeElement.value);
+    formDataToSend.append('name', this.name!.nativeElement.value);
+    formDataToSend.append('message', this.message!.nativeElement.value);
 
     await fetch('https://nishan-singh.com/send_mail/send_mail.php', {
       method: 'POST',
@@ -36,27 +36,17 @@ export class ContactMeComponent {
   }
 
   togglePopUp() {
-    setTimeout(() => {
+    const popUpStart = setTimeout(() => {
       this.mailSent.nativeElement.classList.add('pop-up');
     }, 25);
-    setTimeout(() => {
+    const popUpEnd = setTimeout(() => {
       this.mailSent.nativeElement.classList.remove('pop-up');
+      clearTimeout(popUpStart);
     }, 2400);
     setTimeout(() => {
       this.isMailSent = false;
+      clearTimeout(popUpEnd);
     }, 2500);
-  }
-
-  checkIfNameEmpty() {
-    this.isNameEmpty = this.name.nativeElement.value === '';
-  }
-
-  checkIfEmailEmpty() {
-    this.isEmailEmpty = this.eMail.nativeElement.value === '';
-  }
-
-  checkIfMessageEmpty() {
-    this.isMessageEmpty = this.message.nativeElement.value.length <= 25;
   }
 
   underlineHeading() {
@@ -66,7 +56,7 @@ export class ContactMeComponent {
         type: 'underline',
         color: '#A8DF8E',
         strokeWidth: 3,
-      }
+      },
     );
     underlineHeading.show();
   }
